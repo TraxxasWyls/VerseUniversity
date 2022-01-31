@@ -11,11 +11,11 @@ import SwiftUI
 struct UniversityApp: App {
     var body: some Scene {
         WindowGroup {
-            MegaCounterView(
+            NavigationModuleView(
                 store: .init(
-                    initialState: MegaCounterState(),
-                    reducer: megaCounterReducer,
-                    environment: MegaCounterEnvironment()
+                    initialState: .init(),
+                    reducer: navigationModuleReducer,
+                    environment: NavigationModuleEnvironment()
                 )
             )
         }

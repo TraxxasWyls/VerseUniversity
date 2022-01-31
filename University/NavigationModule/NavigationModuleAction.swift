@@ -1,0 +1,17 @@
+//
+//  NavigationModuleAction.swift
+//  University
+//
+//  Created by Дмитрий Савинов on 31.01.2022.
+//
+
+import Foundation
+
+// MARK: - NavigationModuleAction
+
+public enum NavigationModuleAction: Equatable {
+    case counter(CounterAction)
+    case analyzableCounter(AnalyzableCounterAction)
+    case fibonacciCounter(FibonacciCounterAction)
+    case megaCounter(MegaCounterAction)
+}

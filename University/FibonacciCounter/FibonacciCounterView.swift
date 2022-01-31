@@ -49,10 +49,7 @@ struct ContentView_Preview1: PreviewProvider {
     static var previews: some View {
         FibonacciCounterView(
             store: .init(
-                initialState: FibonacciCounterState.init(
-                    counterState: .init(count: 0),
-                    isFibonacci: false
-                ),
+                initialState: FibonacciCounterState(),
                 reducer: fibonacciCounterReducer,
                 environment: FibonacciCounterEnvironment()
             )
