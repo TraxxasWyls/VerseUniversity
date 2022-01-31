@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB30865527A7F947007BD093 /* UniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30865427A7F947007BD093 /* UniversityApp.swift */; };
+		CB30865727A7F947007BD093 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30865627A7F947007BD093 /* CounterView.swift */; };
+		CB30865927A7F948007BD093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB30865827A7F948007BD093 /* Assets.xcassets */; };
+		CB30865C27A7F948007BD093 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB30865B27A7F948007BD093 /* Preview Assets.xcassets */; };
+		CB30866427A7F9E3007BD093 /* VERSE in Frameworks */ = {isa = PBXBuildFile; productRef = CB30866327A7F9E3007BD093 /* VERSE */; };
+		CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866527A7FBF1007BD093 /* CounterState.swift */; };
+		CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866827A7FC23007BD093 /* CounterAction.swift */; };
+		CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866A27A7FE36007BD093 /* CounterReducer.swift */; };
+		CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */; };
+		CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */; };
+		CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */; };
+		CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */; };
+		CB9CCD9527A80E09004FAA6A /* AnalyzableCounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9027A80E09004FAA6A /* AnalyzableCounterReducer.swift */; };
+		CB9CCD9627A80E09004FAA6A /* AnalyzableCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9127A80E09004FAA6A /* AnalyzableCounterView.swift */; };
+		CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9827A81ABE004FAA6A /* FibonacciCounterState.swift */; };
+		CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9927A81ABE004FAA6A /* FibonacciCounterView.swift */; };
+		CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9A27A81ABE004FAA6A /* FibonacciCounterReducer.swift */; };
+		CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9B27A81ABE004FAA6A /* FibonacciCounterEnvironment.swift */; };
+		CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD9C27A81ABE004FAA6A /* FibonacciCounterAction.swift */; };
+		CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDA327A81C26004FAA6A /* Int.swift */; };
+		CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDA727A82077004FAA6A /* MegaCounterView.swift */; };
+		CB9CCDAD27A82077004FAA6A /* MegaCounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDA827A82077004FAA6A /* MegaCounterReducer.swift */; };
+		CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDA927A82077004FAA6A /* MegaCounterState.swift */; };
+		CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */; };
+		CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB30865127A7F947007BD093 /* University.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = University.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB30865427A7F947007BD093 /* UniversityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityApp.swift; sourceTree = "<group>"; };
+		CB30865627A7F947007BD093 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		CB30865827A7F948007BD093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB30865B27A7F948007BD093 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB30866527A7FBF1007BD093 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		CB30866827A7FC23007BD093 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
+		CB30866A27A7FE36007BD093 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEnvironment.swift; sourceTree = "<group>"; };
+		CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterState.swift; sourceTree = "<group>"; };
+		CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterEnvironment.swift; sourceTree = "<group>"; };
+		CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterAction.swift; sourceTree = "<group>"; };
+		CB9CCD9027A80E09004FAA6A /* AnalyzableCounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterReducer.swift; sourceTree = "<group>"; };
+		CB9CCD9127A80E09004FAA6A /* AnalyzableCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterView.swift; sourceTree = "<group>"; };
+		CB9CCD9827A81ABE004FAA6A /* FibonacciCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterState.swift; sourceTree = "<group>"; };
+		CB9CCD9927A81ABE004FAA6A /* FibonacciCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterView.swift; sourceTree = "<group>"; };
+		CB9CCD9A27A81ABE004FAA6A /* FibonacciCounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterReducer.swift; sourceTree = "<group>"; };
+		CB9CCD9B27A81ABE004FAA6A /* FibonacciCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterEnvironment.swift; sourceTree = "<group>"; };
+		CB9CCD9C27A81ABE004FAA6A /* FibonacciCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterAction.swift; sourceTree = "<group>"; };
+		CB9CCDA327A81C26004FAA6A /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		CB9CCDA727A82077004FAA6A /* MegaCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterView.swift; sourceTree = "<group>"; };
+		CB9CCDA827A82077004FAA6A /* MegaCounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterReducer.swift; sourceTree = "<group>"; };
+		CB9CCDA927A82077004FAA6A /* MegaCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterState.swift; sourceTree = "<group>"; };
+		CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterEnvironment.swift; sourceTree = "<group>"; };
+		CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterAction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB30864E27A7F947007BD093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB30866427A7F9E3007BD093 /* VERSE in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB30864827A7F947007BD093 = {
+			isa = PBXGroup;
+			children = (
+				CB30865327A7F947007BD093 /* University */,
+				CB30865227A7F947007BD093 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB30865227A7F947007BD093 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB30865127A7F947007BD093 /* University.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB30865327A7F947007BD093 /* University */ = {
+			isa = PBXGroup;
+			children = (
+				CB9CCDA627A82077004FAA6A /* MegaCounter */,
+				CB9CCDA227A81C19004FAA6A /* Extensions */,
+				CB30865427A7F947007BD093 /* UniversityApp.swift */,
+				CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */,
+				CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */,
+				CB30866727A7FBFC007BD093 /* Counter */,
+				CB30865827A7F948007BD093 /* Assets.xcassets */,
+				CB30865A27A7F948007BD093 /* Preview Content */,
+			);
+			path = University;
+			sourceTree = "<group>";
+		};
+		CB30865A27A7F948007BD093 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB30865B27A7F948007BD093 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB30866727A7FBFC007BD093 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				CB30866527A7FBF1007BD093 /* CounterState.swift */,
+				CB30865627A7F947007BD093 /* CounterView.swift */,
+				CB30866827A7FC23007BD093 /* CounterAction.swift */,
+				CB30866A27A7FE36007BD093 /* CounterReducer.swift */,
+				CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */ = {
+			isa = PBXGroup;
+			children = (
+				CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */,
+				CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */,
+				CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */,
+				CB9CCD9027A80E09004FAA6A /* AnalyzableCounterReducer.swift */,
+				CB9CCD9127A80E09004FAA6A /* AnalyzableCounterView.swift */,
+			);
+			path = AnalyzableCounter;
+			sourceTree = "<group>";
+		};
+		CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */ = {
+			isa = PBXGroup;
+			children = (
+				CB9CCD9827A81ABE004FAA6A /* FibonacciCounterState.swift */,
+				CB9CCD9927A81ABE004FAA6A /* FibonacciCounterView.swift */,
+				CB9CCD9A27A81ABE004FAA6A /* FibonacciCounterReducer.swift */,
+				CB9CCD9B27A81ABE004FAA6A /* FibonacciCounterEnvironment.swift */,
+				CB9CCD9C27A81ABE004FAA6A /* FibonacciCounterAction.swift */,
+			);
+			path = FibonacciCounter;
+			sourceTree = "<group>";
+		};
+		CB9CCDA227A81C19004FAA6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB9CCDA327A81C26004FAA6A /* Int.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB9CCDA627A82077004FAA6A /* MegaCounter */ = {
+			isa = PBXGroup;
+			children = (
+				CB9CCDA727A82077004FAA6A /* MegaCounterView.swift */,
+				CB9CCDA827A82077004FAA6A /* MegaCounterReducer.swift */,
+				CB9CCDA927A82077004FAA6A /* MegaCounterState.swift */,
+				CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */,
+				CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */,
+			);
+			path = MegaCounter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB30865027A7F947007BD093 /* University */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB30865F27A7F948007BD093 /* Build configuration list for PBXNativeTarget "University" */;
+			buildPhases = (
+				CB30864D27A7F947007BD093 /* Sources */,
+				CB30864E27A7F947007BD093 /* Frameworks */,
+				CB30864F27A7F947007BD093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = University;
+			packageProductDependencies = (
+				CB30866327A7F9E3007BD093 /* VERSE */,
+			);
+			productName = University;
+			productReference = CB30865127A7F947007BD093 /* University.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB30864927A7F947007BD093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					CB30865027A7F947007BD093 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CB30864C27A7F947007BD093 /* Build configuration list for PBXProject "University" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB30864827A7F947007BD093;
+			packageReferences = (
+				CB30866227A7F9E3007BD093 /* XCRemoteSwiftPackageReference "verse" */,
+			);
+			productRefGroup = CB30865227A7F947007BD093 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB30865027A7F947007BD093 /* University */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB30864F27A7F947007BD093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB30865C27A7F948007BD093 /* Preview Assets.xcassets in Resources */,
+				CB30865927A7F948007BD093 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB30864D27A7F947007BD093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
+				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
+				CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */,
+				CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */,
+				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
+				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
+				CB9CCD9527A80E09004FAA6A /* AnalyzableCounterReducer.swift in Sources */,
+				CB9CCD9627A80E09004FAA6A /* AnalyzableCounterView.swift in Sources */,
+				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
+				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
+				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
+				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
+				CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */,
+				CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */,
+				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
+				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
+				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
+				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
+				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
+				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,
+				CB9CCDAD27A82077004FAA6A /* MegaCounterReducer.swift in Sources */,
+				CB30865527A7F947007BD093 /* UniversityApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB30865D27A7F948007BD093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB30865E27A7F948007BD093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB30866027A7F948007BD093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"University/Preview Content\"";
+				DEVELOPMENT_TEAM = HFD95R9VP2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Savinov.University;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB30866127A7F948007BD093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"University/Preview Content\"";
+				DEVELOPMENT_TEAM = HFD95R9VP2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Savinov.University;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB30864C27A7F947007BD093 /* Build configuration list for PBXProject "University" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB30865D27A7F948007BD093 /* Debug */,
+				CB30865E27A7F948007BD093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB30865F27A7F948007BD093 /* Build configuration list for PBXNativeTarget "University" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB30866027A7F948007BD093 /* Debug */,
+				CB30866127A7F948007BD093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB30866227A7F9E3007BD093 /* XCRemoteSwiftPackageReference "verse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Incetro/verse";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB30866327A7F9E3007BD093 /* VERSE */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB30866227A7F9E3007BD093 /* XCRemoteSwiftPackageReference "verse" */;
+			productName = VERSE;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB30864927A7F947007BD093 /* Project object */;
+}
