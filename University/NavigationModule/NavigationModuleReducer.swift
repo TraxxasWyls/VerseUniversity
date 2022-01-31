@@ -14,6 +14,28 @@ public typealias NavigationModuleReducer = Reducer<NavigationModuleState, Naviga
 
 // MARK: - CounterReducer
 
-public let navigationModuleReducer = NavigationModuleReducer { state, action, environment in
-    return .none
-}
+public let navigationModuleReducer = NavigationModuleReducer.combine(
+    counterReducer.pullback(
+        state: \.counter,
+        action: /NavigationModuleAction.counter,
+        environment: CounterEnvironment()
+    ),
+    fibonacciCounterReducer.pullback(
+            state: \.fibonacciCounter,
+            action: /NavigationModuleAction.fibonacciCounter,
+            environment: FibonacciCounterEnvironment()
+        ),
+    analyzableCounterReducer.pullback(
+            state: \.analyzableCounter,
+            action: /NavigationModuleAction.analyzableCounter,
+            environment: AnalyzableCounterEnvironment()
+        ),
+    megaCounterReducer.pullback(
+            state: \.megaCounter,
+            action: /NavigationModuleAction.megaCounter,
+            environment: MegaCounterEnvironment()
+        ),
+    .init { _, _, _ in
+        return .none
+    }
+)
