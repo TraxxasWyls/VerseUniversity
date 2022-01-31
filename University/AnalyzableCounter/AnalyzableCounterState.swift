@@ -15,11 +15,11 @@ public struct AnalyzableCounterState: Equatable {
     public var counterState: CounterState = CounterState()
 
     /// Min value
-    public var minValue: Int = 0
+    public var minValue = 0
 
     /// max value
-    public var maxValue: Int = 0
+    public var maxValue = 0
 
     /// Events count
-    public var eventsCount: Int = 0
+    public var eventsCount = 0
 }

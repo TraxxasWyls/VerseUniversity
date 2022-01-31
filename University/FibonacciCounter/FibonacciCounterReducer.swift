@@ -16,7 +16,7 @@ public typealias FibonacciCounterReducer = Reducer<FibonacciCounterState, Fibona
 
 public let fibonacciCounterReducer = FibonacciCounterReducer.combine(
     counterReducer.pullback(
-        state: \FibonacciCounterState.counterState,
+        state: \.counterState,
         action: /FibonacciCounterAction.counter,
         environment: CounterEnvironment()
     ),

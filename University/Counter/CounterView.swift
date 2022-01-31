@@ -37,7 +37,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         CounterView(
             store: .init(
-                initialState: CounterState.init(count: 0),
+                initialState: CounterState(),
                 reducer: counterReducer,
                 environment: CounterEnvironment()
             )

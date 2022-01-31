@@ -18,14 +18,14 @@ public let megaCounterReducer = MegaCounterReducer.combine(
     analyzableCounterReducer
         .optional()
         .pullback(
-            state: \MegaCounterState.analyzableCounterState,
+            state: \.analyzableCounterState,
             action: /MegaCounterAction.analyzableCounter,
             environment: AnalyzableCounterEnvironment()
         ),
     fibonacciCounterReducer
         .optional()
         .pullback(
-            state: \MegaCounterState.fibonacciCounterState,
+            state: \.fibonacciCounterState,
             action: /MegaCounterAction.fibonacciCounter,
             environment: FibonacciCounterEnvironment()
         ),

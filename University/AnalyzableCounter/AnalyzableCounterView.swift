@@ -59,12 +59,7 @@ struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
         AnalyzableCounterView(
             store: .init(
-                initialState: AnalyzableCounterState.init(
-                    counterState: .init(count: 0),
-                    minValue: 0,
-                    maxValue: 0,
-                    eventsCount: 0
-                ),
+                initialState: AnalyzableCounterState(),
                 reducer: analyzableCounterReducer,
                 environment: AnalyzableCounterEnvironment()
             )

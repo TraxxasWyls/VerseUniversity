@@ -16,4 +16,7 @@ public struct FibonacciCounterState: Equatable {
 
     /// Fibonacci status
     public var isFibonacci: Bool = false
+
+    /// Fibonacci status description
+    public var fibonacciStatus: String { isFibonacci ? "✅" : "🛑" }
 }

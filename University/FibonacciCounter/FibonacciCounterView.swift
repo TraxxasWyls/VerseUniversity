@@ -36,7 +36,7 @@ public struct FibonacciCounterView: View {
                     HStack {
                         Text("Fibonacci status: ")
                         Spacer()
-                        Text(viewStore.isFibonacci ? "✅" : "🛑")
+                        Text(viewStore.fibonacciStatus)
                     }
                 }.textCase(nil)
 //            }

@@ -16,17 +16,13 @@ public typealias AnalyzableCounterReducer = Reducer<AnalyzableCounterState, Anal
 
 public let analyzableCounterReducer = AnalyzableCounterReducer.combine(
     counterReducer.pullback(
-        state: \AnalyzableCounterState.counterState,
+        state: \.counterState,
         action: /AnalyzableCounterAction.counter,
         environment: CounterEnvironment()
     ),
     AnalyzableCounterReducer { state, action, environment in
-        if state.counterState.count > state.maxValue {
-            state.maxValue = state.counterState.count
-        }
-        else if state.counterState.count < state.minValue {
-            state.minValue = state.counterState.count
-        }
+        state.maxValue = max(state.counterState.count, state.maxValue)
+        state.minValue = min(state.counterState.count, state.minValue)
         state.eventsCount = state.eventsCount + 1
         return .none
     }
