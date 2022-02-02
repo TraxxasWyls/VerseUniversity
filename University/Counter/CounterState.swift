@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - CounterState
 
-public struct CounterState: Equatable {
+public struct CounterState: Equatable, Hashable {
 
     /// Counter value
     public var count = 1

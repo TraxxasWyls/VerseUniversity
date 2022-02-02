@@ -31,6 +31,11 @@
 		CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866827A7FC23007BD093 /* CounterAction.swift */; };
 		CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866A27A7FE36007BD093 /* CounterReducer.swift */; };
 		CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */; };
+		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
+		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
+		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
+		CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07FA27AB01DD006828AC /* FlexibleBindingView.swift */; };
+		CB8A080127AB01DD006828AC /* FlexibleBindingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07FC27AB01DD006828AC /* FlexibleBindingEnvironment.swift */; };
 		CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */; };
 		CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */; };
 		CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */; };
@@ -74,6 +79,11 @@
 		CB30866827A7FC23007BD093 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
 		CB30866A27A7FE36007BD093 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEnvironment.swift; sourceTree = "<group>"; };
+		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
+		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
+		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
+		CB8A07FA27AB01DD006828AC /* FlexibleBindingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingView.swift; sourceTree = "<group>"; };
+		CB8A07FC27AB01DD006828AC /* FlexibleBindingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterState.swift; sourceTree = "<group>"; };
 		CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterAction.swift; sourceTree = "<group>"; };
@@ -239,6 +249,7 @@
 		CB30865327A7F947007BD093 /* University */ = {
 			isa = PBXGroup;
 			children = (
+				CB8A07F227AB01DD006828AC /* FlexibleBinding */,
 				CB1BDE1727AAE10C00D17723 /* SimpleBinding */,
 				CB30865427A7F947007BD093 /* UniversityApp.swift */,
 				CB1BDE0727AAC4A800D17723 /* AlertAndSheet */,
@@ -272,6 +283,58 @@
 				CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		CB8A07F227AB01DD006828AC /* FlexibleBinding */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A07F327AB01DD006828AC /* Reducer */,
+				CB8A07F527AB01DD006828AC /* State */,
+				CB8A07F727AB01DD006828AC /* Action */,
+				CB8A07F927AB01DD006828AC /* View */,
+				CB8A07FB27AB01DD006828AC /* Environment */,
+			);
+			path = FlexibleBinding;
+			sourceTree = "<group>";
+		};
+		CB8A07F327AB01DD006828AC /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB8A07F527AB01DD006828AC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB8A07F727AB01DD006828AC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB8A07F927AB01DD006828AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A07FA27AB01DD006828AC /* FlexibleBindingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8A07FB27AB01DD006828AC /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A07FC27AB01DD006828AC /* FlexibleBindingEnvironment.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 		CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */ = {
@@ -403,14 +466,17 @@
 				CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
+				CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */,
 				CB9CCD9527A80E09004FAA6A /* AnalyzableCounterReducer.swift in Sources */,
 				CB1BDE2527AAE10C00D17723 /* SimpleBindingView.swift in Sources */,
 				CB1BDE2227AAE10C00D17723 /* SimpleBindingReducer.swift in Sources */,
 				CB1BDE0427A86F8500D17723 /* NavigationModuleEnvironment.swift in Sources */,
 				CB9CCD9627A80E09004FAA6A /* AnalyzableCounterView.swift in Sources */,
 				CB1BDE0027A86F7300D17723 /* NavigationModuleReducer.swift in Sources */,
+				CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */,
 				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
 				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
+				CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
@@ -420,6 +486,7 @@
 				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
 				CB1BDDFE27A8427B00D17723 /* NavigationModuleView.swift in Sources */,
 				CB1BDE2327AAE10C00D17723 /* SimpleBindingState.swift in Sources */,
+				CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */,
 				CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */,
 				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
@@ -428,6 +495,7 @@
 				CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */,
 				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,
 				CB1BDE0E27AAC5BC00D17723 /* AlertAndSheetState.swift in Sources */,
+				CB8A080127AB01DD006828AC /* FlexibleBindingEnvironment.swift in Sources */,
 				CB1BDE0227A86F7B00D17723 /* NavigationModuleState.swift in Sources */,
 				CB9CCDAD27A82077004FAA6A /* MegaCounterReducer.swift in Sources */,
 				CB30865527A7F947007BD093 /* UniversityApp.swift in Sources */,

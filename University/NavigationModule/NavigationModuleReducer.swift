@@ -45,6 +45,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.simpleBinding,
         environment: SimpleBindingEnvironment()
     ),
+    flexibleBindingReducer.pullback(
+        state: \.flexibleBinding,
+        action: /NavigationModuleAction.flexibleBinding,
+        environment: FlexibleBindingEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

@@ -96,6 +96,17 @@ public struct NavigationModuleView: View {
                         ) {
                             Text("Simple Binding")
                         }
+                        NavigationLink(
+                            destination:
+                                FlexibleBindingView(
+                                    store: store.scope(
+                                        state: \.flexibleBinding,
+                                        action: NavigationModuleAction.flexibleBinding
+                                    )
+                                )
+                        ) {
+                            Text("Flexible Binding")
+                        }
                     }
                 }
                 .navigationBarTitle(Text("VERSE"))
@@ -105,7 +116,7 @@ public struct NavigationModuleView: View {
 }
 
 
-struct ContentView_Preview12324: PreviewProvider {
+struct ContentView_NavigationModuleView: PreviewProvider {
     static var previews: some View {
         NavigationModuleView(
             store: .init(

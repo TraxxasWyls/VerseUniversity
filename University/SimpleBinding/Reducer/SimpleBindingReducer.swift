@@ -20,7 +20,7 @@ public let simpleBindingReducer = SimpleBindingReducer.combine(
     .init { state, action, environment in
         switch action {
         case .colorChanged(let color):
-            state.color = color
+            state.pickedColor = color
         case .controlReseted:
             state = SimpleBindingState()
         case .textChanged(let text):

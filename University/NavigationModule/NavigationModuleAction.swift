@@ -16,4 +16,5 @@ public enum NavigationModuleAction: Equatable {
     case megaCounter(MegaCounterAction)
     case alertAndActionSheet(AlertAndSheetAction)
     case simpleBinding(SimpleBindingAction)
+    case flexibleBinding(FlexibleBindingAction)
 }

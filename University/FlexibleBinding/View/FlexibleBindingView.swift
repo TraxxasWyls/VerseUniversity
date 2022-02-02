@@ -1,5 +1,5 @@
 //
-//  SimpleBindingView.swift
+//  FlexibleBindingView.swift
 //  University
 //
 //  Created by Дмитрий Савинов on 02.02.2022.
@@ -9,27 +9,21 @@ import Foundation
 import VERSE
 import SwiftUI
 
-// MARK: - SimpleBindingView
+// MARK: - FlexibleBindingView
 
-public struct SimpleBindingView: View {
+public struct FlexibleBindingView: View {
 
     // MARK: - Properties
 
-    let store: Store<SimpleBindingState, SimpleBindingAction>
+    let store: Store<FlexibleBindingState, FlexibleBindingAction>
 
     // MARK: - View
 
     public var body: some View {
         WithViewStore(store) { viewStore in
             Form {
-                Section(header: Text("Simple Bindings")) {
-                    Picker(
-                        "",
-                        selection: viewStore.binding(
-                            get: \.pickedColor,
-                            send: SimpleBindingAction.colorChanged
-                        )
-                    ) {
+                Section(header: Text("Flexible Binding")) {
+                    Picker("", selection: viewStore.binding(\.$pickedColor)) {
                         ForEach(viewStore.colors, id: \.self) {
                             Text($0.rawValue.capitalized).tag($0.color)
                         }
@@ -39,17 +33,11 @@ public struct SimpleBindingView: View {
 
                     TextField(
                         "Введи свой текст, Щенок",
-                        text: viewStore.binding(
-                            get: \.text,
-                            send: SimpleBindingAction.textChanged
-                        )
+                        text: viewStore.binding(\.$text)
                     ).disabled(viewStore.controlDisabled)
 
                     Toggle(
-                        isOn: viewStore.binding(
-                            get: \.controlDisabled,
-                            send: SimpleBindingAction.disabledStateChanged
-                        )
+                        isOn: viewStore.binding(\.$controlDisabled)
                     ) {
                         Text("Бан жопы")
                     }
@@ -60,7 +48,7 @@ public struct SimpleBindingView: View {
                         CounterView(
                             store: store.scope(
                                 state: \.counter,
-                                action: SimpleBindingAction.counter
+                                action: FlexibleBindingAction.counter
                             )
                         )
                             .buttonStyle(BorderlessButtonStyle())
@@ -70,32 +58,29 @@ public struct SimpleBindingView: View {
                         Text("Слайдер: \(viewStore.counter.count)")
                         Spacer()
                         Slider(
-                            value: viewStore.binding(
-                                get: \.sliderValue,
-                                send: SimpleBindingAction.sliderValueChanged
-                            ),
+                            value: viewStore.binding(\.$sliderValue),
                             in: 0...Double(viewStore.counter.count),
                             step: 1
                         ).disabled(viewStore.controlDisabled)
                     }
 
                     Button("Сброс") {
-                        viewStore.send(SimpleBindingAction.controlReseted)
+                        viewStore.send(FlexibleBindingAction.controlReseted)
                     }
                 }.textCase(nil)
             }.accentColor(viewStore.pickedColor.color)
-        }.navigationBarTitle("Simple Bindings")
+        }.navigationBarTitle("Flexible Binding")
     }
 }
 
 
-struct ContentView_SimpleBindingView: PreviewProvider {
+struct ContentView_FlexibleBindingView: PreviewProvider {
     static var previews: some View {
-        SimpleBindingView(
+        FlexibleBindingView(
             store: .init(
-                initialState: SimpleBindingState(),
-                reducer: simpleBindingReducer,
-                environment: SimpleBindingEnvironment()
+                initialState: FlexibleBindingState(),
+                reducer: flexibleBindingReducer,
+                environment: FlexibleBindingEnvironment()
             )
         )
     }

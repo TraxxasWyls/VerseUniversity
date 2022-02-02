@@ -1,5 +1,5 @@
 //
-//  SimpleBindingState.swift
+//  FlexibleBindingState.swift
 //  University
 //
 //  Created by Дмитрий Савинов on 02.02.2022.
@@ -8,9 +8,9 @@
 import VERSE
 import SwiftUI
 
-// MARK: - SimpleBindingState
+// MARK: - FlexibleBindingState
 
-public struct SimpleBindingState: Equatable {
+public struct FlexibleBindingState: Equatable, Hashable {
 
     public enum PickableColor: String, CaseIterable {
         case red, green, blue, orange, purple
@@ -31,15 +31,15 @@ public struct SimpleBindingState: Equatable {
         }
     }
 
-    var controlDisabled: Bool = false
+    @BindableState var controlDisabled: Bool = false
 
     var counter: CounterState = CounterState()
 
-    var sliderValue = 0.0
+    @BindableState var sliderValue = 0.0
 
-    var text = ""
+    @BindableState var text = ""
 
-    var pickedColor: PickableColor = .red
+    @BindableState var pickedColor: PickableColor = .red
 
     let colors = PickableColor.allCases
 }
