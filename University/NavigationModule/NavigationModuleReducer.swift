@@ -35,6 +35,16 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
             action: /NavigationModuleAction.megaCounter,
             environment: MegaCounterEnvironment()
         ),
+    alertSheetReducer.pullback(
+        state: \.alertAndActionSheet,
+        action: /NavigationModuleAction.alertAndActionSheet,
+        environment: AlertAndSheetEnvironment()
+    ),
+    simpleBindingReducer.pullback(
+        state: \.simpleBinding,
+        action: /NavigationModuleAction.simpleBinding,
+        environment: SimpleBindingEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

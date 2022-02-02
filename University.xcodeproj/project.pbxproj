@@ -12,6 +12,16 @@
 		CB1BDE0227A86F7B00D17723 /* NavigationModuleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE0127A86F7B00D17723 /* NavigationModuleState.swift */; };
 		CB1BDE0427A86F8500D17723 /* NavigationModuleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE0327A86F8500D17723 /* NavigationModuleEnvironment.swift */; };
 		CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE0527A86F8C00D17723 /* NavigationModuleAction.swift */; };
+		CB1BDE0E27AAC5BC00D17723 /* AlertAndSheetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE0D27AAC5BC00D17723 /* AlertAndSheetState.swift */; };
+		CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE0F27AAC63800D17723 /* AlertAndSheetAction.swift */; };
+		CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1127AAC9A200D17723 /* AlertAndSheetEnvironment.swift */; };
+		CB1BDE1427AAC9E400D17723 /* AlertAndSheetReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1327AAC9E400D17723 /* AlertAndSheetReducer.swift */; };
+		CB1BDE1627AAD55E00D17723 /* AlertAndSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1527AAD55E00D17723 /* AlertAndSheetView.swift */; };
+		CB1BDE2227AAE10C00D17723 /* SimpleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1927AAE10C00D17723 /* SimpleBindingReducer.swift */; };
+		CB1BDE2327AAE10C00D17723 /* SimpleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1B27AAE10C00D17723 /* SimpleBindingState.swift */; };
+		CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1D27AAE10C00D17723 /* SimpleBindingAction.swift */; };
+		CB1BDE2527AAE10C00D17723 /* SimpleBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE1F27AAE10C00D17723 /* SimpleBindingView.swift */; };
+		CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1BDE2127AAE10C00D17723 /* SimpleBindingEnvironment.swift */; };
 		CB30865527A7F947007BD093 /* UniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30865427A7F947007BD093 /* UniversityApp.swift */; };
 		CB30865727A7F947007BD093 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30865627A7F947007BD093 /* CounterView.swift */; };
 		CB30865927A7F948007BD093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB30865827A7F948007BD093 /* Assets.xcassets */; };
@@ -45,6 +55,16 @@
 		CB1BDE0127A86F7B00D17723 /* NavigationModuleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModuleState.swift; sourceTree = "<group>"; };
 		CB1BDE0327A86F8500D17723 /* NavigationModuleEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModuleEnvironment.swift; sourceTree = "<group>"; };
 		CB1BDE0527A86F8C00D17723 /* NavigationModuleAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModuleAction.swift; sourceTree = "<group>"; };
+		CB1BDE0D27AAC5BC00D17723 /* AlertAndSheetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndSheetState.swift; sourceTree = "<group>"; };
+		CB1BDE0F27AAC63800D17723 /* AlertAndSheetAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndSheetAction.swift; sourceTree = "<group>"; };
+		CB1BDE1127AAC9A200D17723 /* AlertAndSheetEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndSheetEnvironment.swift; sourceTree = "<group>"; };
+		CB1BDE1327AAC9E400D17723 /* AlertAndSheetReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndSheetReducer.swift; sourceTree = "<group>"; };
+		CB1BDE1527AAD55E00D17723 /* AlertAndSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndSheetView.swift; sourceTree = "<group>"; };
+		CB1BDE1927AAE10C00D17723 /* SimpleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBindingReducer.swift; sourceTree = "<group>"; };
+		CB1BDE1B27AAE10C00D17723 /* SimpleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBindingState.swift; sourceTree = "<group>"; };
+		CB1BDE1D27AAE10C00D17723 /* SimpleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBindingAction.swift; sourceTree = "<group>"; };
+		CB1BDE1F27AAE10C00D17723 /* SimpleBindingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBindingView.swift; sourceTree = "<group>"; };
+		CB1BDE2127AAE10C00D17723 /* SimpleBindingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBindingEnvironment.swift; sourceTree = "<group>"; };
 		CB30865127A7F947007BD093 /* University.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = University.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB30865427A7F947007BD093 /* UniversityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityApp.swift; sourceTree = "<group>"; };
 		CB30865627A7F947007BD093 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
@@ -96,6 +116,110 @@
 			path = NavigationModule;
 			sourceTree = "<group>";
 		};
+		CB1BDE0727AAC4A800D17723 /* AlertAndSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE0C27AAC51700D17723 /* Environment */,
+				CB1BDE0B27AAC50700D17723 /* Action */,
+				CB1BDE0A27AAC4EF00D17723 /* State */,
+				CB1BDE0927AAC4E500D17723 /* Reducer */,
+				CB1BDE0827AAC4CA00D17723 /* View */,
+			);
+			path = AlertAndSheet;
+			sourceTree = "<group>";
+		};
+		CB1BDE0827AAC4CA00D17723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1527AAD55E00D17723 /* AlertAndSheetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB1BDE0927AAC4E500D17723 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1327AAC9E400D17723 /* AlertAndSheetReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB1BDE0A27AAC4EF00D17723 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE0D27AAC5BC00D17723 /* AlertAndSheetState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB1BDE0B27AAC50700D17723 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE0F27AAC63800D17723 /* AlertAndSheetAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB1BDE0C27AAC51700D17723 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1127AAC9A200D17723 /* AlertAndSheetEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB1BDE1727AAE10C00D17723 /* SimpleBinding */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1827AAE10C00D17723 /* Reducer */,
+				CB1BDE1A27AAE10C00D17723 /* State */,
+				CB1BDE1C27AAE10C00D17723 /* Action */,
+				CB1BDE1E27AAE10C00D17723 /* View */,
+				CB1BDE2027AAE10C00D17723 /* Environment */,
+			);
+			path = SimpleBinding;
+			sourceTree = "<group>";
+		};
+		CB1BDE1827AAE10C00D17723 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1927AAE10C00D17723 /* SimpleBindingReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB1BDE1A27AAE10C00D17723 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1B27AAE10C00D17723 /* SimpleBindingState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB1BDE1C27AAE10C00D17723 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1D27AAE10C00D17723 /* SimpleBindingAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB1BDE1E27AAE10C00D17723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE1F27AAE10C00D17723 /* SimpleBindingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB1BDE2027AAE10C00D17723 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BDE2127AAE10C00D17723 /* SimpleBindingEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		CB30864827A7F947007BD093 = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +239,12 @@
 		CB30865327A7F947007BD093 /* University */ = {
 			isa = PBXGroup;
 			children = (
+				CB1BDE1727AAE10C00D17723 /* SimpleBinding */,
+				CB30865427A7F947007BD093 /* UniversityApp.swift */,
+				CB1BDE0727AAC4A800D17723 /* AlertAndSheet */,
 				CB1BDDFC27A841DD00D17723 /* NavigationModule */,
 				CB9CCDA627A82077004FAA6A /* MegaCounter */,
 				CB9CCDA227A81C19004FAA6A /* Extensions */,
-				CB30865427A7F947007BD093 /* UniversityApp.swift */,
 				CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */,
 				CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */,
 				CB30866727A7FBFC007BD093 /* Counter */,
@@ -270,11 +396,16 @@
 			files = (
 				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
 				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
+				CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */,
+				CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */,
 				CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */,
+				CB1BDE1427AAC9E400D17723 /* AlertAndSheetReducer.swift in Sources */,
 				CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB9CCD9527A80E09004FAA6A /* AnalyzableCounterReducer.swift in Sources */,
+				CB1BDE2527AAE10C00D17723 /* SimpleBindingView.swift in Sources */,
+				CB1BDE2227AAE10C00D17723 /* SimpleBindingReducer.swift in Sources */,
 				CB1BDE0427A86F8500D17723 /* NavigationModuleEnvironment.swift in Sources */,
 				CB9CCD9627A80E09004FAA6A /* AnalyzableCounterView.swift in Sources */,
 				CB1BDE0027A86F7300D17723 /* NavigationModuleReducer.swift in Sources */,
@@ -283,15 +414,20 @@
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
+				CB1BDE1627AAD55E00D17723 /* AlertAndSheetView.swift in Sources */,
 				CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */,
 				CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */,
 				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
 				CB1BDDFE27A8427B00D17723 /* NavigationModuleView.swift in Sources */,
+				CB1BDE2327AAE10C00D17723 /* SimpleBindingState.swift in Sources */,
+				CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */,
 				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
 				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
+				CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */,
 				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,
+				CB1BDE0E27AAC5BC00D17723 /* AlertAndSheetState.swift in Sources */,
 				CB1BDE0227A86F7B00D17723 /* NavigationModuleState.swift in Sources */,
 				CB9CCDAD27A82077004FAA6A /* MegaCounterReducer.swift in Sources */,
 				CB30865527A7F947007BD093 /* UniversityApp.swift in Sources */,

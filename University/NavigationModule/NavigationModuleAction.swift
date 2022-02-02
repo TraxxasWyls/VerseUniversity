@@ -14,4 +14,6 @@ public enum NavigationModuleAction: Equatable {
     case analyzableCounter(AnalyzableCounterAction)
     case fibonacciCounter(FibonacciCounterAction)
     case megaCounter(MegaCounterAction)
+    case alertAndActionSheet(AlertAndSheetAction)
+    case simpleBinding(SimpleBindingAction)
 }

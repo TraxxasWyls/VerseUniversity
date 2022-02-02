@@ -74,6 +74,28 @@ public struct NavigationModuleView: View {
                         ) {
                             Text("Optional counters")
                         }
+                        NavigationLink(
+                            destination:
+                                AlertAndSheetView(
+                                    store: store.scope(
+                                        state: \.alertAndActionSheet,
+                                        action: NavigationModuleAction.alertAndActionSheet
+                                    )
+                                )
+                        ) {
+                            Text("Alert and ActionSheet")
+                        }
+                        NavigationLink(
+                            destination:
+                                SimpleBindingView(
+                                    store: store.scope(
+                                        state: \.simpleBinding,
+                                        action: NavigationModuleAction.simpleBinding
+                                    )
+                                )
+                        ) {
+                            Text("Simple Binding")
+                        }
                     }
                 }
                 .navigationBarTitle(Text("VERSE"))

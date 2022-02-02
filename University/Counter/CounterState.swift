@@ -12,5 +12,5 @@ import Foundation
 public struct CounterState: Equatable {
 
     /// Counter value
-    public var count = 0
+    public var count = 1
 }

@@ -14,4 +14,6 @@ public struct NavigationModuleState: Equatable {
     public var analyzableCounter: AnalyzableCounterState = AnalyzableCounterState()
     public var fibonacciCounter: FibonacciCounterState = FibonacciCounterState()
     public var megaCounter: MegaCounterState = MegaCounterState()
+    public var alertAndActionSheet: AlertAndSheetState = AlertAndSheetState()
+    public var simpleBinding: SimpleBindingState = SimpleBindingState()
 }
