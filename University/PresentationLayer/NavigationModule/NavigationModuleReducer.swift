@@ -55,6 +55,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.justEffect,
         environment: JustEffectEnvironment()
     ),
+    scramblerReducer.pullback(
+        state: \.scrambler,
+        action: /NavigationModuleAction.scrambler,
+        environment: ScramblerEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

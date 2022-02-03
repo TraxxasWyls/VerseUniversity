@@ -120,6 +120,17 @@ public struct NavigationModuleView: View {
                         ) {
                             Text("Just Effect")
                         }
+                        NavigationLink(
+                            destination:
+                                ScramblerView(
+                                    store: store.scope(
+                                        state: \.scrambler,
+                                        action: NavigationModuleAction.scrambler
+                                    )
+                                )
+                        ) {
+                            Text("Scrambler")
+                        }
                     }
                 }
                 .navigationBarTitle(Text("VERSE"))
