@@ -17,4 +17,5 @@ public enum NavigationModuleAction: Equatable {
     case alertAndActionSheet(AlertAndSheetAction)
     case simpleBinding(SimpleBindingAction)
     case flexibleBinding(FlexibleBindingAction)
+    case justEffect(JustEffectAction)
 }

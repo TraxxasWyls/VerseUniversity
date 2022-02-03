@@ -17,4 +17,5 @@ public struct NavigationModuleState: Equatable {
     public var alertAndActionSheet: AlertAndSheetState = AlertAndSheetState()
     public var simpleBinding: SimpleBindingState = SimpleBindingState()
     public var flexibleBinding: FlexibleBindingState = FlexibleBindingState()
+    public var justEffect: JustEffectState = JustEffectState()
 }

@@ -108,6 +108,19 @@ public struct NavigationModuleView: View {
                             Text("Flexible Binding")
                         }
                     }
+                    Section(header: Text("Pre Entermidiate")) {
+                        NavigationLink(
+                            destination:
+                                JustEffectView(
+                                    store: store.scope(
+                                        state: \.justEffect,
+                                        action: NavigationModuleAction.justEffect
+                                    )
+                                )
+                        ) {
+                            Text("Just Effect")
+                        }
+                    }
                 }
                 .navigationBarTitle(Text("VERSE"))
             }

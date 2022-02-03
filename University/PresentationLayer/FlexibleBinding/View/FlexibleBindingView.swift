@@ -23,6 +23,7 @@ public struct FlexibleBindingView: View {
         WithViewStore(store) { viewStore in
             Form {
                 Section(header: Text("Flexible Binding")) {
+                    
                     Picker("", selection: viewStore.binding(\.$pickedColor)) {
                         ForEach(viewStore.colors, id: \.self) {
                             Text($0.rawValue.capitalized).tag($0.color)

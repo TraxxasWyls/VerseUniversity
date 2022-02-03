@@ -50,6 +50,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.flexibleBinding,
         environment: FlexibleBindingEnvironment()
     ),
+    justEffectReducer.pullback(
+        state: \.justEffect,
+        action: /NavigationModuleAction.justEffect,
+        environment: JustEffectEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

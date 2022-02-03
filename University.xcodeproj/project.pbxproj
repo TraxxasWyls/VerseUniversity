@@ -36,6 +36,13 @@
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
 		CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07FA27AB01DD006828AC /* FlexibleBindingView.swift */; };
 		CB8A080127AB01DD006828AC /* FlexibleBindingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07FC27AB01DD006828AC /* FlexibleBindingEnvironment.swift */; };
+		CB8A081427AC420F006828AC /* JustEffectReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A080B27AC420F006828AC /* JustEffectReducer.swift */; };
+		CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A080D27AC420F006828AC /* JustEffectState.swift */; };
+		CB8A081627AC420F006828AC /* JustEffectAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A080F27AC420F006828AC /* JustEffectAction.swift */; };
+		CB8A081727AC420F006828AC /* JustEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A081127AC420F006828AC /* JustEffectView.swift */; };
+		CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A081327AC420F006828AC /* JustEffectEnvironment.swift */; };
+		CB8A081F27AC461B006828AC /* NumberFactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A081E27AC461B006828AC /* NumberFactService.swift */; };
+		CB8A082127AC4627006828AC /* NumberFactServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A082027AC4627006828AC /* NumberFactServiceImplementation.swift */; };
 		CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */; };
 		CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */; };
 		CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */; };
@@ -84,6 +91,14 @@
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
 		CB8A07FA27AB01DD006828AC /* FlexibleBindingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingView.swift; sourceTree = "<group>"; };
 		CB8A07FC27AB01DD006828AC /* FlexibleBindingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingEnvironment.swift; sourceTree = "<group>"; };
+		CB8A080B27AC420F006828AC /* JustEffectReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustEffectReducer.swift; sourceTree = "<group>"; };
+		CB8A080D27AC420F006828AC /* JustEffectState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustEffectState.swift; sourceTree = "<group>"; };
+		CB8A080F27AC420F006828AC /* JustEffectAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustEffectAction.swift; sourceTree = "<group>"; };
+		CB8A081127AC420F006828AC /* JustEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustEffectView.swift; sourceTree = "<group>"; };
+		CB8A081327AC420F006828AC /* JustEffectEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustEffectEnvironment.swift; sourceTree = "<group>"; };
+		CB8A081E27AC461B006828AC /* NumberFactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactService.swift; sourceTree = "<group>"; };
+		CB8A082027AC4627006828AC /* NumberFactServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactServiceImplementation.swift; sourceTree = "<group>"; };
+		CB8A082227AC556B006828AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterState.swift; sourceTree = "<group>"; };
 		CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterAction.swift; sourceTree = "<group>"; };
@@ -249,16 +264,10 @@
 		CB30865327A7F947007BD093 /* University */ = {
 			isa = PBXGroup;
 			children = (
-				CB8A07F227AB01DD006828AC /* FlexibleBinding */,
-				CB1BDE1727AAE10C00D17723 /* SimpleBinding */,
-				CB30865427A7F947007BD093 /* UniversityApp.swift */,
-				CB1BDE0727AAC4A800D17723 /* AlertAndSheet */,
-				CB1BDDFC27A841DD00D17723 /* NavigationModule */,
-				CB9CCDA627A82077004FAA6A /* MegaCounter */,
-				CB9CCDA227A81C19004FAA6A /* Extensions */,
-				CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */,
-				CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */,
-				CB30866727A7FBFC007BD093 /* Counter */,
+				CB8A082227AC556B006828AC /* Info.plist */,
+				CB8A081A27AC45C8006828AC /* ApplicationLayer */,
+				CB8A081927AC45B1006828AC /* PresentationLayer */,
+				CB8A081B27AC45E1006828AC /* BusinessLayer */,
 				CB30865827A7F948007BD093 /* Assets.xcassets */,
 				CB30865A27A7F948007BD093 /* Preview Content */,
 			);
@@ -335,6 +344,108 @@
 				CB8A07FC27AB01DD006828AC /* FlexibleBindingEnvironment.swift */,
 			);
 			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB8A080927AC420F006828AC /* JustEffect */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A080A27AC420F006828AC /* Reducer */,
+				CB8A080C27AC420F006828AC /* State */,
+				CB8A080E27AC420F006828AC /* Action */,
+				CB8A081027AC420F006828AC /* View */,
+				CB8A081227AC420F006828AC /* Environment */,
+			);
+			path = JustEffect;
+			sourceTree = "<group>";
+		};
+		CB8A080A27AC420F006828AC /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A080B27AC420F006828AC /* JustEffectReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB8A080C27AC420F006828AC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A080D27AC420F006828AC /* JustEffectState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB8A080E27AC420F006828AC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A080F27AC420F006828AC /* JustEffectAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB8A081027AC420F006828AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A081127AC420F006828AC /* JustEffectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8A081227AC420F006828AC /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A081327AC420F006828AC /* JustEffectEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB8A081927AC45B1006828AC /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A080927AC420F006828AC /* JustEffect */,
+				CB8A07F227AB01DD006828AC /* FlexibleBinding */,
+				CB1BDE1727AAE10C00D17723 /* SimpleBinding */,
+				CB1BDE0727AAC4A800D17723 /* AlertAndSheet */,
+				CB1BDDFC27A841DD00D17723 /* NavigationModule */,
+				CB9CCDA627A82077004FAA6A /* MegaCounter */,
+				CB9CCDA227A81C19004FAA6A /* Extensions */,
+				CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */,
+				CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */,
+				CB30866727A7FBFC007BD093 /* Counter */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		CB8A081A27AC45C8006828AC /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CB30865427A7F947007BD093 /* UniversityApp.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		CB8A081B27AC45E1006828AC /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A081C27AC45FB006828AC /* Services */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		CB8A081C27AC45FB006828AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A081D27AC4608006828AC /* NumberFactService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB8A081D27AC4608006828AC /* NumberFactService */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A081E27AC461B006828AC /* NumberFactService.swift */,
+				CB8A082027AC4627006828AC /* NumberFactServiceImplementation.swift */,
+			);
+			path = NumberFactService;
 			sourceTree = "<group>";
 		};
 		CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */ = {
@@ -464,6 +575,7 @@
 				CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */,
 				CB1BDE1427AAC9E400D17723 /* AlertAndSheetReducer.swift in Sources */,
 				CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */,
+				CB8A082127AC4627006828AC /* NumberFactServiceImplementation.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */,
@@ -477,11 +589,14 @@
 				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
 				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
 				CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */,
+				CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
 				CB1BDE1627AAD55E00D17723 /* AlertAndSheetView.swift in Sources */,
 				CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */,
+				CB8A081F27AC461B006828AC /* NumberFactService.swift in Sources */,
+				CB8A081427AC420F006828AC /* JustEffectReducer.swift in Sources */,
 				CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */,
 				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
 				CB1BDDFE27A8427B00D17723 /* NavigationModuleView.swift in Sources */,
@@ -489,8 +604,11 @@
 				CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */,
 				CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */,
 				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
+				CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
+				CB8A081627AC420F006828AC /* JustEffectAction.swift in Sources */,
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
+				CB8A081727AC420F006828AC /* JustEffectView.swift in Sources */,
 				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
 				CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */,
 				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,
@@ -632,6 +750,7 @@
 				DEVELOPMENT_TEAM = HFD95R9VP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = University/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -662,6 +781,7 @@
 				DEVELOPMENT_TEAM = HFD95R9VP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = University/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
