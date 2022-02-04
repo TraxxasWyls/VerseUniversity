@@ -18,8 +18,6 @@ public struct AnimatedTimersState: Equatable {
 
     public var allTimersDone = false
 
-    public var isSheetPresented = false
-
     public var amountOfCompleteTimers = 0
 
     public var isConsecutive = false
