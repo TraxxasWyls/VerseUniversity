@@ -31,13 +31,6 @@ let timerReducer = TimerReducer.init{ state, action, environment in
             state.progress += state.step
         }
         state.progress = min(state.progress, 1)
-    case .decrementTimerTick:
-        if state.progress <= 0 {
-            state.progress = 0
-        } else {
-            state.progress -= state.step
-        }
-        state.progress = max(state.progress, 0)
     case .onDisappear:
         if state.shoudCancelOnDissappear {
             state.progress = 0

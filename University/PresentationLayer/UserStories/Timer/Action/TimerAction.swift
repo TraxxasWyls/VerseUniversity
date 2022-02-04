@@ -11,7 +11,6 @@ import Foundation
 
 public enum TimerAction: Equatable {
     case timerTick
-    case decrementTimerTick
     case timerButtonTapped
     case onDisappear
 }

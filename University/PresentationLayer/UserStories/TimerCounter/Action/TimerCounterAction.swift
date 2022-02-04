@@ -10,8 +10,7 @@ import Foundation
 // MARK: - TimerCounterAction
 
 public enum TimerCounterAction: Equatable {
-    case plusButtonTapped
-    case minusButtonTapped
-    case generateButtonTapped
-    case scrumbleResponse(Result<String, Never>)
+    case timer(TimerAction)
+    case incrementButtonTapped
+    case decrementButtonTapped
 }

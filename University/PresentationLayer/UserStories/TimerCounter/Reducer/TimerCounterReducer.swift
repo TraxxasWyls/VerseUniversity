@@ -10,39 +10,32 @@ import VERSE
 
 typealias TimerCounterReducer = Reducer<TimerCounterState, TimerCounterAction, TimerCounterEnvironment>
 
-let timerCounterReducer = TimerCounterReducer.init{ state, action, environment in
-
-    func cancelAndGetScrumble() -> Effect<TimerCounterAction, Never> {
-        .concatenate(
-            .cancel(id: ScrumbleCancellationId()),
-            .init(value: .generateButtonTapped)
-        )
-    }
-
-    struct ScrumbleCancellationId: Hashable {
-    }
-
-    switch action {
-    case .minusButtonTapped:
-        state.scrumbleLenght -= 1
-        return cancelAndGetScrumble()
-    case .plusButtonTapped:
-        state.scrumbleLenght += 1
-        return cancelAndGetScrumble()
-    case .scrumbleResponse(.success(let scrumble)):
-        state.isScrumbleRequestInFlight = false
-        state.scrumble = scrumble
-    case .generateButtonTapped:
-        state.isScrumbleRequestInFlight = true
-        state.scrumble = nil
-        return environment
-            .scrumbleGenerator
-            .scrumble(lenght: state.scrumbleLenght)
-            .receive(on: environment.mainQueue)
-            .catchToEffect(TimerCounterAction.scrumbleResponse)
-            .cancellable(id: ScrumbleCancellationId())
-    default:
+let timerCounterReducer = TimerCounterReducer.combine(
+    timerReducer
+        .pullback(
+            state: \.timerState,
+            action: /TimerCounterAction.timer,
+            environment: TimerEnvironment()
+        ),
+    .init { state, action, environment in
+        switch action {
+        case .incrementButtonTapped:
+            if state.timerState.progress >= 1 {
+                state.timerState.progress = 0
+            } else {
+                state.timerState.progress += state.timerState.step
+            }
+            state.timerState.progress = min(state.timerState.progress, 1)
+        case .decrementButtonTapped:
+            if state.timerState.progress <= 0 {
+                state.timerState.progress = 0
+            } else {
+                state.timerState.progress -= state.timerState.step
+            }
+            state.timerState.progress = max(state.timerState.progress, 0)
+        default:
+            return .none
+        }
         return .none
     }
-    return .none
-}
+)

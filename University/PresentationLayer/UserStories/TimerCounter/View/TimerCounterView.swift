@@ -15,28 +15,26 @@ struct TimerCounterView: View {
     var body: some View {
         WithViewStore(store) { viewStore in
             VStack {
-                if viewStore.isScrumbleRequestInFlight {
-                    ProgressView()
-                } else {
-                    Text(viewStore.mainText).bold()
-                }
+                TimerView(
+                    store: store.scope(
+                        state: \.timerState,
+                        action: TimerCounterAction.timer
+                    )
+                )
                 HStack {
                     Button("-") {
-                        viewStore.send(.minusButtonTapped)
+                        viewStore.send(.decrementButtonTapped)
                     }
                     .background(.red)
                     .buttonStyle(.bordered)
                     .cornerRadius(20)
-                    Text("Current lenght: \(viewStore.scrumbleLenght)")
                     Button("+") {
-                        viewStore.send(.plusButtonTapped)
+                        viewStore.send(.incrementButtonTapped)
                     }
                     .background(.green)
                     .buttonStyle(.bordered)
                     .cornerRadius(20)
                 }.padding(50)
-            }.onTapGesture {
-                viewStore.send(.generateButtonTapped)
             }
         }.navigationBarTitle(Text("TimerCounter"))
     }
