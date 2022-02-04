@@ -20,7 +20,7 @@ public let analyzableCounterReducer = AnalyzableCounterReducer.combine(
         action: /AnalyzableCounterAction.counter,
         environment: CounterEnvironment()
     ),
-    AnalyzableCounterReducer { state, action, environment in
+    .init { state, action, environment in
         state.maxValue = max(state.counterState.count, state.maxValue)
         state.minValue = min(state.counterState.count, state.minValue)
         state.eventsCount = state.eventsCount + 1

@@ -14,12 +14,12 @@ let scramblerReducer = ScramblerReducer.init{ state, action, environment in
 
     func cancelAndGetScrumble() -> Effect<ScramblerAction, Never> {
         .concatenate(
-            .cancel(id: ScrumbleIdGenerator()),
+            .cancel(id: ScrumbleCancellationId()),
             .init(value: .generateButtonTapped)
         )
     }
 
-    struct ScrumbleIdGenerator: Hashable {
+    struct ScrumbleCancellationId: Hashable {
     }
 
     switch action {
@@ -39,9 +39,8 @@ let scramblerReducer = ScramblerReducer.init{ state, action, environment in
             .scrumbleGenerator
             .scrumble(lenght: state.scrumbleLenght)
             .receive(on: environment.mainQueue)
-            .catchToEffect()
-            .map(ScramblerAction.scrumbleResponse)
-            .cancellable(id: ScrumbleIdGenerator())
+            .catchToEffect(ScramblerAction.scrumbleResponse)
+            .cancellable(id: ScrumbleCancellationId())
     default:
         return .none
     }

@@ -50,6 +50,17 @@
 		CB8A083227AC663F006828AC /* ScramblerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A082D27AC663F006828AC /* ScramblerEnvironment.swift */; };
 		CB8A083527AC6CDF006828AC /* ScrumbleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A083427AC6CDF006828AC /* ScrumbleGenerator.swift */; };
 		CB8A083727AC6CE7006828AC /* ScrumbleGeneratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A083627AC6CE7006828AC /* ScrumbleGeneratorImplementation.swift */; };
+		CB8A084327AD6AD6006828AC /* TimerCounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A083A27AD6AD6006828AC /* TimerCounterReducer.swift */; };
+		CB8A084427AD6AD6006828AC /* TimerCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A083C27AD6AD6006828AC /* TimerCounterState.swift */; };
+		CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A083E27AD6AD6006828AC /* TimerCounterAction.swift */; };
+		CB8A084627AD6AD6006828AC /* TimerCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A084027AD6AD6006828AC /* TimerCounterView.swift */; };
+		CB8A084727AD6AD6006828AC /* TimerCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A084227AD6AD6006828AC /* TimerCounterEnvironment.swift */; };
+		CB8A085327AD6B8C006828AC /* TimerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A084A27AD6B8C006828AC /* TimerReducer.swift */; };
+		CB8A085427AD6B8C006828AC /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A084C27AD6B8C006828AC /* TimerState.swift */; };
+		CB8A085527AD6B8C006828AC /* TimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A084E27AD6B8C006828AC /* TimerAction.swift */; };
+		CB8A085627AD6B8C006828AC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085027AD6B8C006828AC /* TimerView.swift */; };
+		CB8A085727AD6B8C006828AC /* TimerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085227AD6B8C006828AC /* TimerEnvironment.swift */; };
+		CB8A085C27AD6FA2006828AC /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085B27AD6FA2006828AC /* ProgressRingView.swift */; };
 		CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */; };
 		CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */; };
 		CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */; };
@@ -113,6 +124,17 @@
 		CB8A082D27AC663F006828AC /* ScramblerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScramblerEnvironment.swift; sourceTree = "<group>"; };
 		CB8A083427AC6CDF006828AC /* ScrumbleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumbleGenerator.swift; sourceTree = "<group>"; };
 		CB8A083627AC6CE7006828AC /* ScrumbleGeneratorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumbleGeneratorImplementation.swift; sourceTree = "<group>"; };
+		CB8A083A27AD6AD6006828AC /* TimerCounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterReducer.swift; sourceTree = "<group>"; };
+		CB8A083C27AD6AD6006828AC /* TimerCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterState.swift; sourceTree = "<group>"; };
+		CB8A083E27AD6AD6006828AC /* TimerCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterAction.swift; sourceTree = "<group>"; };
+		CB8A084027AD6AD6006828AC /* TimerCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterView.swift; sourceTree = "<group>"; };
+		CB8A084227AD6AD6006828AC /* TimerCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounterEnvironment.swift; sourceTree = "<group>"; };
+		CB8A084A27AD6B8C006828AC /* TimerReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerReducer.swift; sourceTree = "<group>"; };
+		CB8A084C27AD6B8C006828AC /* TimerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		CB8A084E27AD6B8C006828AC /* TimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerAction.swift; sourceTree = "<group>"; };
+		CB8A085027AD6B8C006828AC /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		CB8A085227AD6B8C006828AC /* TimerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEnvironment.swift; sourceTree = "<group>"; };
+		CB8A085B27AD6FA2006828AC /* ProgressRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
 		CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterState.swift; sourceTree = "<group>"; };
 		CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterAction.swift; sourceTree = "<group>"; };
@@ -415,17 +437,8 @@
 		CB8A081927AC45B1006828AC /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				CB8A082327AC663F006828AC /* Scrambler */,
-				CB8A080927AC420F006828AC /* JustEffect */,
-				CB8A07F227AB01DD006828AC /* FlexibleBinding */,
-				CB1BDE1727AAE10C00D17723 /* SimpleBinding */,
-				CB1BDE0727AAC4A800D17723 /* AlertAndSheet */,
-				CB1BDDFC27A841DD00D17723 /* NavigationModule */,
-				CB9CCDA627A82077004FAA6A /* MegaCounter */,
-				CB9CCDA227A81C19004FAA6A /* Extensions */,
-				CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */,
-				CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */,
-				CB30866727A7FBFC007BD093 /* Counter */,
+				CB8A085927AD6F77006828AC /* Views */,
+				CB8A085827AD6F62006828AC /* UserStories */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -523,6 +536,146 @@
 				CB8A083627AC6CE7006828AC /* ScrumbleGeneratorImplementation.swift */,
 			);
 			path = ScrumbleGenerator;
+			sourceTree = "<group>";
+		};
+		CB8A083827AD6AD6006828AC /* TimerCounter */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A083927AD6AD6006828AC /* Reducer */,
+				CB8A083B27AD6AD6006828AC /* State */,
+				CB8A083D27AD6AD6006828AC /* Action */,
+				CB8A083F27AD6AD6006828AC /* View */,
+				CB8A084127AD6AD6006828AC /* Environment */,
+			);
+			path = TimerCounter;
+			sourceTree = "<group>";
+		};
+		CB8A083927AD6AD6006828AC /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A083A27AD6AD6006828AC /* TimerCounterReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB8A083B27AD6AD6006828AC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A083C27AD6AD6006828AC /* TimerCounterState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB8A083D27AD6AD6006828AC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A083E27AD6AD6006828AC /* TimerCounterAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB8A083F27AD6AD6006828AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084027AD6AD6006828AC /* TimerCounterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8A084127AD6AD6006828AC /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084227AD6AD6006828AC /* TimerCounterEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB8A084827AD6B8C006828AC /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084927AD6B8C006828AC /* Reducer */,
+				CB8A084B27AD6B8C006828AC /* State */,
+				CB8A084D27AD6B8C006828AC /* Action */,
+				CB8A084F27AD6B8C006828AC /* View */,
+				CB8A085127AD6B8C006828AC /* Environment */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		CB8A084927AD6B8C006828AC /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084A27AD6B8C006828AC /* TimerReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB8A084B27AD6B8C006828AC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084C27AD6B8C006828AC /* TimerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB8A084D27AD6B8C006828AC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084E27AD6B8C006828AC /* TimerAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB8A084F27AD6B8C006828AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A085027AD6B8C006828AC /* TimerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8A085127AD6B8C006828AC /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A085227AD6B8C006828AC /* TimerEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB8A085827AD6F62006828AC /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A084827AD6B8C006828AC /* Timer */,
+				CB8A083827AD6AD6006828AC /* TimerCounter */,
+				CB8A082327AC663F006828AC /* Scrambler */,
+				CB8A080927AC420F006828AC /* JustEffect */,
+				CB8A07F227AB01DD006828AC /* FlexibleBinding */,
+				CB1BDE1727AAE10C00D17723 /* SimpleBinding */,
+				CB1BDE0727AAC4A800D17723 /* AlertAndSheet */,
+				CB1BDDFC27A841DD00D17723 /* NavigationModule */,
+				CB9CCDA627A82077004FAA6A /* MegaCounter */,
+				CB9CCDA227A81C19004FAA6A /* Extensions */,
+				CB9CCD9727A81ABE004FAA6A /* FibonacciCounter */,
+				CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */,
+				CB30866727A7FBFC007BD093 /* Counter */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		CB8A085927AD6F77006828AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A085A27AD6F84006828AC /* ProgressRingView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB8A085A27AD6F84006828AC /* ProgressRingView */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A085B27AD6FA2006828AC /* ProgressRingView.swift */,
+			);
+			path = ProgressRingView;
 			sourceTree = "<group>";
 		};
 		CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */ = {
@@ -645,16 +798,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8A085327AD6B8C006828AC /* TimerReducer.swift in Sources */,
 				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
 				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
 				CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */,
 				CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */,
+				CB8A085727AD6B8C006828AC /* TimerEnvironment.swift in Sources */,
+				CB8A085627AD6B8C006828AC /* TimerView.swift in Sources */,
 				CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */,
 				CB1BDE1427AAC9E400D17723 /* AlertAndSheetReducer.swift in Sources */,
 				CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */,
 				CB8A082127AC4627006828AC /* NumberFactServiceImplementation.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB8A083027AC663F006828AC /* ScramblerAction.swift in Sources */,
+				CB8A085C27AD6FA2006828AC /* ProgressRingView.swift in Sources */,
+				CB8A085527AD6B8C006828AC /* TimerAction.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB8A082E27AC663F006828AC /* ScramblerReducer.swift in Sources */,
 				CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */,
@@ -669,8 +827,10 @@
 				CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */,
 				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
 				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
+				CB8A084427AD6AD6006828AC /* TimerCounterState.swift in Sources */,
 				CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */,
 				CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */,
+				CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB8A083127AC663F006828AC /* ScramblerView.swift in Sources */,
@@ -679,20 +839,24 @@
 				CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */,
 				CB8A081F27AC461B006828AC /* NumberFactService.swift in Sources */,
 				CB8A081427AC420F006828AC /* JustEffectReducer.swift in Sources */,
+				CB8A084327AD6AD6006828AC /* TimerCounterReducer.swift in Sources */,
 				CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */,
 				CB8A082F27AC663F006828AC /* ScramblerState.swift in Sources */,
+				CB8A085427AD6B8C006828AC /* TimerState.swift in Sources */,
 				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
 				CB1BDDFE27A8427B00D17723 /* NavigationModuleView.swift in Sources */,
 				CB1BDE2327AAE10C00D17723 /* SimpleBindingState.swift in Sources */,
 				CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */,
 				CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */,
 				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
+				CB8A084627AD6AD6006828AC /* TimerCounterView.swift in Sources */,
 				CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
 				CB8A081627AC420F006828AC /* JustEffectAction.swift in Sources */,
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
 				CB8A081727AC420F006828AC /* JustEffectView.swift in Sources */,
 				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
+				CB8A084727AD6AD6006828AC /* TimerCounterEnvironment.swift in Sources */,
 				CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */,
 				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,
 				CB1BDE0E27AAC5BC00D17723 /* AlertAndSheetState.swift in Sources */,

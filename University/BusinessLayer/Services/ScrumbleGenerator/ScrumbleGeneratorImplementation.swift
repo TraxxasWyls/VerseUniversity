@@ -44,7 +44,7 @@ public class ScrumbleGeneratorImplementation {
 extension ScrumbleGeneratorImplementation: ScrumbleGenerator {
 
     public func scrumble(lenght: Int) -> AnyPublisher<String, Never> {
-        .init(Just(scramble(of: lenght)))
+        Just(scramble(of: lenght))
         .delay(for: 0.5, scheduler: RunLoop.main)
         .eraseToAnyPublisher()
     }
