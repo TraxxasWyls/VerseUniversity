@@ -28,7 +28,7 @@ let timerReducer = TimerReducer.init{ state, action, environment in
             else: .cancel(id: state.id)
         )
     case .timerTick:
-        if state.progress >= state.progressMaxValue {
+        if state.progress + state.step >= state.progressMaxValue {
             state.progress = state.progressMaxValue
             return .init(value: .timerHasBeenEnded)
         } else {

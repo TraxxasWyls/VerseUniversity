@@ -142,7 +142,7 @@ public struct NavigationModuleView: View {
                                     )
                                 )
                         ) {
-                            Text("AnimatedTimers")
+                            Text("Animated Timers")
                         }
                     }
                 }

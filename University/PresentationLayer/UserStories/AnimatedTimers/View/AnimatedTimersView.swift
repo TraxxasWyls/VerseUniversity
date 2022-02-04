@@ -119,7 +119,7 @@ struct AnimatedTimersView: View {
                         .transition(.opacity)
                 }
             )
-        }.navigationBarTitle(Text("AnimatedTimers"))
+        }.navigationBarTitle(Text("Animated Timers"))
     }
 }
 

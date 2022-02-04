@@ -68,7 +68,13 @@ public struct ProgressRingView: View {
                     from: 0,
                     to: CGFloat(min(progressIntervalLenght, 1))
                 )
-                .stroke(lineWidth: theme.lineWidth)
+                .stroke(
+                    style: StrokeStyle(
+                        lineWidth: theme.lineWidth,
+                        lineCap: .round,
+                        lineJoin: .round
+                    )
+                )
                 .opacity(0.31)
                 .foregroundColor(.secondary)
                 .rotationEffect(Angle(degrees: 270))
