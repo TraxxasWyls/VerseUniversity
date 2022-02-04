@@ -71,6 +71,7 @@ public struct ProgressRingView: View {
                 .stroke(lineWidth: theme.lineWidth)
                 .opacity(0.31)
                 .foregroundColor(.secondary)
+                .rotationEffect(Angle(degrees: 270))
             Circle()
                 .trim(
                     from: 0,

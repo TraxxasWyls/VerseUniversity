@@ -132,6 +132,19 @@ public struct NavigationModuleView: View {
                             Text("Scrambler")
                         }
                     }
+                    Section(header: Text("Entermidiate")) {
+                        NavigationLink(
+                            destination:
+                                AnimatedTimersView(
+                                    store: store.scope(
+                                        state: \.animatedTimers,
+                                        action: NavigationModuleAction.animatedTimers
+                                    )
+                                )
+                        ) {
+                            Text("AnimatedTimers")
+                        }
+                    }
                 }
                 .navigationBarTitle(Text("VERSE"))
             }

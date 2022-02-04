@@ -61,6 +61,12 @@
 		CB8A085627AD6B8C006828AC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085027AD6B8C006828AC /* TimerView.swift */; };
 		CB8A085727AD6B8C006828AC /* TimerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085227AD6B8C006828AC /* TimerEnvironment.swift */; };
 		CB8A085C27AD6FA2006828AC /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085B27AD6FA2006828AC /* ProgressRingView.swift */; };
+		CB8A086827AD893A006828AC /* AnimatedTimersReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A085F27AD893A006828AC /* AnimatedTimersReducer.swift */; };
+		CB8A086927AD893A006828AC /* AnimatedTimersState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A086127AD893A006828AC /* AnimatedTimersState.swift */; };
+		CB8A086A27AD893A006828AC /* AnimatedTimersAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A086327AD893A006828AC /* AnimatedTimersAction.swift */; };
+		CB8A086B27AD893A006828AC /* AnimatedTimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A086527AD893A006828AC /* AnimatedTimersView.swift */; };
+		CB8A086C27AD893A006828AC /* AnimatedTimersEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A086727AD893A006828AC /* AnimatedTimersEnvironment.swift */; };
+		CB8A087027AD8B6E006828AC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A086F27AD8B6E006828AC /* Color.swift */; };
 		CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */; };
 		CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */; };
 		CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */; };
@@ -135,6 +141,12 @@
 		CB8A085027AD6B8C006828AC /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		CB8A085227AD6B8C006828AC /* TimerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEnvironment.swift; sourceTree = "<group>"; };
 		CB8A085B27AD6FA2006828AC /* ProgressRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		CB8A085F27AD893A006828AC /* AnimatedTimersReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTimersReducer.swift; sourceTree = "<group>"; };
+		CB8A086127AD893A006828AC /* AnimatedTimersState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTimersState.swift; sourceTree = "<group>"; };
+		CB8A086327AD893A006828AC /* AnimatedTimersAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTimersAction.swift; sourceTree = "<group>"; };
+		CB8A086527AD893A006828AC /* AnimatedTimersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTimersView.swift; sourceTree = "<group>"; };
+		CB8A086727AD893A006828AC /* AnimatedTimersEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTimersEnvironment.swift; sourceTree = "<group>"; };
+		CB8A086F27AD8B6E006828AC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CB9CCD8D27A80E09004FAA6A /* AnalyzableCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterState.swift; sourceTree = "<group>"; };
 		CB9CCD8E27A80E09004FAA6A /* AnalyzableCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCD8F27A80E09004FAA6A /* AnalyzableCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterAction.swift; sourceTree = "<group>"; };
@@ -437,6 +449,7 @@
 		CB8A081927AC45B1006828AC /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				CB8A086D27AD8B5D006828AC /* Useful */,
 				CB8A085927AD6F77006828AC /* Views */,
 				CB8A085827AD6F62006828AC /* UserStories */,
 			);
@@ -645,6 +658,7 @@
 		CB8A085827AD6F62006828AC /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				CB8A085D27AD893A006828AC /* AnimatedTimers */,
 				CB8A084827AD6B8C006828AC /* Timer */,
 				CB8A083827AD6AD6006828AC /* TimerCounter */,
 				CB8A082327AC663F006828AC /* Scrambler */,
@@ -676,6 +690,74 @@
 				CB8A085B27AD6FA2006828AC /* ProgressRingView.swift */,
 			);
 			path = ProgressRingView;
+			sourceTree = "<group>";
+		};
+		CB8A085D27AD893A006828AC /* AnimatedTimers */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A085E27AD893A006828AC /* Reducer */,
+				CB8A086027AD893A006828AC /* State */,
+				CB8A086227AD893A006828AC /* Action */,
+				CB8A086427AD893A006828AC /* View */,
+				CB8A086627AD893A006828AC /* Environment */,
+			);
+			path = AnimatedTimers;
+			sourceTree = "<group>";
+		};
+		CB8A085E27AD893A006828AC /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A085F27AD893A006828AC /* AnimatedTimersReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB8A086027AD893A006828AC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A086127AD893A006828AC /* AnimatedTimersState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB8A086227AD893A006828AC /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A086327AD893A006828AC /* AnimatedTimersAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB8A086427AD893A006828AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A086527AD893A006828AC /* AnimatedTimersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB8A086627AD893A006828AC /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A086727AD893A006828AC /* AnimatedTimersEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB8A086D27AD8B5D006828AC /* Useful */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A086E27AD8B64006828AC /* Extentions */,
+			);
+			path = Useful;
+			sourceTree = "<group>";
+		};
+		CB8A086E27AD8B64006828AC /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A086F27AD8B6E006828AC /* Color.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		CB9CCD8C27A80E09004FAA6A /* AnalyzableCounter */ = {
@@ -801,6 +883,7 @@
 				CB8A085327AD6B8C006828AC /* TimerReducer.swift in Sources */,
 				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
 				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
+				CB8A086827AD893A006828AC /* AnimatedTimersReducer.swift in Sources */,
 				CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */,
 				CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */,
 				CB8A085727AD6B8C006828AC /* TimerEnvironment.swift in Sources */,
@@ -833,13 +916,18 @@
 				CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
+				CB8A086B27AD893A006828AC /* AnimatedTimersView.swift in Sources */,
+				CB8A087027AD8B6E006828AC /* Color.swift in Sources */,
+				CB8A086927AD893A006828AC /* AnimatedTimersState.swift in Sources */,
 				CB8A083127AC663F006828AC /* ScramblerView.swift in Sources */,
+				CB8A086A27AD893A006828AC /* AnimatedTimersAction.swift in Sources */,
 				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
 				CB1BDE1627AAD55E00D17723 /* AlertAndSheetView.swift in Sources */,
 				CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */,
 				CB8A081F27AC461B006828AC /* NumberFactService.swift in Sources */,
 				CB8A081427AC420F006828AC /* JustEffectReducer.swift in Sources */,
 				CB8A084327AD6AD6006828AC /* TimerCounterReducer.swift in Sources */,
+				CB8A086C27AD893A006828AC /* AnimatedTimersEnvironment.swift in Sources */,
 				CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */,
 				CB8A082F27AC663F006828AC /* ScramblerState.swift in Sources */,
 				CB8A085427AD6B8C006828AC /* TimerState.swift in Sources */,

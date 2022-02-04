@@ -19,4 +19,5 @@ public enum NavigationModuleAction: Equatable {
     case flexibleBinding(FlexibleBindingAction)
     case justEffect(JustEffectAction)
     case scrambler(ScramblerAction)
+    case animatedTimers(AnimatedTimersAction)
 }

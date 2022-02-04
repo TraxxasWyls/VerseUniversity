@@ -60,6 +60,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.scrambler,
         environment: ScramblerEnvironment()
     ),
+    animatedTimersReducer.pullback(
+        state: \.animatedTimers,
+        action: /NavigationModuleAction.animatedTimers,
+        environment: AnimatedTimersEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

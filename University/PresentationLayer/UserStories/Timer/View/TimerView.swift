@@ -17,6 +17,7 @@ struct TimerView: View {
             ZStack {
                 ProgressRingView(
                     progress: viewStore.progress,
+                    progressIntervalLenght: viewStore.progressMaxValue,
                     theme: viewStore.timerTheme
                 )
                     .frame(width: 120, height: 120)
@@ -28,6 +29,9 @@ struct TimerView: View {
             }
             .onDisappear {
                 viewStore.send(.onDisappear)
+            }
+            .onAppear {
+                viewStore.send(.onAppear)
             }
         }.navigationBarTitle(Text("Timer"))
     }

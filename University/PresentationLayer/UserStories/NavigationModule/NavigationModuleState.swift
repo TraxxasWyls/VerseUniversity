@@ -19,4 +19,5 @@ public struct NavigationModuleState: Equatable {
     public var flexibleBinding: FlexibleBindingState = FlexibleBindingState()
     public var justEffect: JustEffectState = JustEffectState()
     public var scrambler: ScramblerState = ScramblerState()
+    public var animatedTimers: AnimatedTimersState = AnimatedTimersState()
 }
