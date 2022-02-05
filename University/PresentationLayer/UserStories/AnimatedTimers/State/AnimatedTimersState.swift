@@ -8,6 +8,14 @@
 import Foundation
 import VERSE
 
+// MARK: - TimerMode
+
+public enum TimerMode: Equatable {
+    case consecutive
+    case parallel
+    case none
+}
+
 // MARK: - AnimatedTimersState
 
 public struct AnimatedTimersState: Equatable {
@@ -20,7 +28,9 @@ public struct AnimatedTimersState: Equatable {
 
     public var completeTimers = Set<Int>()
 
-    public var isConsecutive = false
+    public var timerMode: TimerMode = .parallel
+
+    public var previousTimerMode: TimerMode = .none
 
     public var firtstTimerState: TimerState = TimerState(
         timeInterval: 17,

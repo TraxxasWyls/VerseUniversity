@@ -89,23 +89,35 @@ struct AnimatedTimersView: View {
                 }
                 .padding()
                 HStack {
-                    Button("Parallel") {
+                    CircleButton(
+                        image: .init(systemName: "repeat.1"),
+                        gradient: [
+                            .init(color: .blue, location: 1)
+                        ]
+                    ) {
                         viewStore.send(.parallelButtonTapped)
                     }
-                    .background(.red)
-                    .buttonStyle(.bordered)
-                    .cornerRadius(20)
-                    Button(viewStore.state.isTimersOnFire ? "Stop" : "Play") {
+                    .padding()
+                    CircleButton(
+                        image: .init(systemName: viewStore.state.isTimersOnFire ? "pause.fill" : "play.fill"),
+                        gradient: [
+                            .init(color: .green, location: 0),
+                            .init(color: viewStore.state.isTimersOnFire ? .red : .green, location: 1)
+                        ]
+                    ) {
                         viewStore.send(.playOrPauseButtonTapped)
                     }
                     .padding()
-                    Button("Consecutive") {
+                    CircleButton(
+                        image: .init(systemName: "shuffle"),
+                        gradient: [
+                            .init(color: .blue, location: 1)
+                        ]
+                    ) {
                         viewStore.send(.consecutiveButtonTapped)
                     }
-                    .background(.green)
-                    .buttonStyle(.bordered)
-                    .cornerRadius(20)
-                }.padding(50)
+                    .padding()
+                }
             }
             .sheet(
                 isPresented: viewStore.binding(
@@ -113,10 +125,26 @@ struct AnimatedTimersView: View {
                     send: AnimatedTimersAction.setSheet
                 ),
                 content: {
-                    Text.init("Done!")
-                        .font(.system(size: 70, weight: .bold, design: .rounded))
-                        .monospacedDigit()
-                        .transition(.opacity)
+                    HStack {
+                        Text.init("Done!")
+                            .font(.system(size: 80, weight: .bold, design: .rounded))
+                            .monospacedDigit()
+                            .transition(.opacity)
+                    }.padding()
+                    ZStack {
+                        Image(systemName: "checkmark.circle")
+                            .font(.system(size: 80, weight: .light))
+                    }
+                    .frame(width: 100, height: 100)
+                    .background(
+                        ZStack {
+                            Circle()
+                                .fill(.green)
+                                .frame(width: 100, height: 100)//Button Size.
+                                .shadow(color: .gray.opacity(0.2), radius: 8, x: -8, y: -8)
+                                .shadow(color: .gray.opacity(0.2), radius: 8, x: 8, y: 8)
+                        }
+                    )
                 }
             )
         }.navigationBarTitle(Text("Animated Timers"))

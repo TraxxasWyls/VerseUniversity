@@ -22,18 +22,27 @@ struct TimerCounterView: View {
                     )
                 )
                 HStack {
-                    Button("-") {
+                    CircleButton(
+                        image: .init(systemName: "minus"),
+                        gradient: [
+                            .init(color: .red, location: 0),
+                            .init(color: .yellow, location: 1)
+                        ]
+                    ) {
                         viewStore.send(.decrementButtonTapped)
                     }
-                    .background(.red)
-                    .buttonStyle(.bordered)
-                    .cornerRadius(20)
-                    Button("+") {
+                    .padding()
+                    CircleButton(
+                        image: .init(systemName: "plus"),
+                        gradient: [
+                            .init(color: .yellow, location: 0),
+                            .init(color: .green, location: 1)
+                        ]
+                    ) {
                         viewStore.send(.incrementButtonTapped)
                     }
-                    .background(.green)
-                    .buttonStyle(.bordered)
-                    .cornerRadius(20)
+                    .padding()
+
                 }.padding(50)
             }
         }.navigationBarTitle(Text("TimerCounter"))

@@ -83,6 +83,7 @@
 		CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDA927A82077004FAA6A /* MegaCounterState.swift */; };
 		CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */; };
 		CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */; };
+		CBA0C9FB27AE870200A861EF /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0C9FA27AE870100A861EF /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +164,7 @@
 		CB9CCDA927A82077004FAA6A /* MegaCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterState.swift; sourceTree = "<group>"; };
 		CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterAction.swift; sourceTree = "<group>"; };
+		CBA0C9FA27AE870100A861EF /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,6 +681,7 @@
 		CB8A085927AD6F77006828AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CBA0C9FC27AE870700A861EF /* CircleButton */,
 				CB8A085A27AD6F84006828AC /* ProgressRingView */,
 			);
 			path = Views;
@@ -804,6 +807,14 @@
 			path = MegaCounter;
 			sourceTree = "<group>";
 		};
+		CBA0C9FC27AE870700A861EF /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				CBA0C9FA27AE870100A861EF /* CircleButton.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -907,6 +918,7 @@
 				CB8A083727AC6CE7006828AC /* ScrumbleGeneratorImplementation.swift in Sources */,
 				CB9CCD9627A80E09004FAA6A /* AnalyzableCounterView.swift in Sources */,
 				CB1BDE0027A86F7300D17723 /* NavigationModuleReducer.swift in Sources */,
+				CBA0C9FB27AE870200A861EF /* CircleButton.swift in Sources */,
 				CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */,
 				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
 				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
