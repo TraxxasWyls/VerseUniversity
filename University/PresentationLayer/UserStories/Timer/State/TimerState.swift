@@ -39,7 +39,7 @@ public struct TimerState: Equatable {
 
     public let stepInterval: TimeInterval
 
-    public let shoudCancelOnDissappear: Bool
+    public var shoudCancelOnDissappear: Bool
 
     public let timerTheme: ProgressViewTheme
 
