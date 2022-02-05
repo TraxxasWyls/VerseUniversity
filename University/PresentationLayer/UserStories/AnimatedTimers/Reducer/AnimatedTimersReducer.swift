@@ -207,7 +207,11 @@ let animatedTimersReducer = AnimatedTimersReducer.combine(
             clearTimersProgessAndChangeActiveState()
             state.allTimersDone = false
             state.timerMode = .consecutive
-            return .init(value: .firstTimer(.timerButtonTapped))
+            return .concatenate(
+                parallelTimers(),
+                parallelTimers(),
+                .init(value: .firstTimer(.timerButtonTapped))
+            )
         case .setSheet(let isSheetPresented):
             if state.allTimersDone && !isSheetPresented {
                 state.allTimersDone = false
