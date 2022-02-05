@@ -42,11 +42,13 @@ let timerReducer = TimerReducer.init{ state, action, environment in
             state.progress = 0
             return Effect.cancel(id: state.cancellationID)
         }
+        state.isDisplayed = false
     case .onAppear:
         if state.isTimerActive {
             state.isTimerActive = false
             return .init(value: .timerButtonTapped)
         }
+        state.isDisplayed = true
     }
     return .none
 }

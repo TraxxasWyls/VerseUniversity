@@ -65,57 +65,72 @@ let animatedTimersReducer = AnimatedTimersReducer.combine(
             }
         case .firstCounterTimer(.timer(.onAppear)):
             state.firstCounterTimerState.timerState = state.firtstTimerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(1) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true, (!state.completeTimers.contains(1) || !(state.timerMode == .consecutive)) {
                 return .init(value: .firstTimer(.timerButtonTapped))
             }
         case .firstCounterTimer(.timer(.onDisappear)):
             state.firtstTimerState = state.firstCounterTimerState.timerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(1) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true, (!state.completeTimers.contains(1) || !(state.timerMode == .consecutive))  {
                 return .init(value: .firstTimer(.timerButtonTapped))
             }
         case .secondCounterTimer(.timer(.onAppear)):
             state.secondCounterTimerState.timerState = state.secondTimerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(2) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true,
+               ((!state.completeTimers.contains(2) && state.completeTimers.contains(1)) || !(state.timerMode == .consecutive))  {
                 return .init(value: .secondTimer(.timerButtonTapped))
             }
         case .secondCounterTimer(.timer(.onDisappear)):
             state.secondTimerState = state.secondCounterTimerState.timerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(2) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true,
+               ((!state.completeTimers.contains(2) && state.completeTimers.contains(1)) || !(state.timerMode == .consecutive))  {
                 return .init(value: .secondTimer(.timerButtonTapped))
             }
         case .thirdCounterTimer(.timer(.onAppear)):
             state.thirdCounterTimerState.timerState = state.thirdTimerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(3) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true,
+               ((!state.completeTimers.contains(3) && state.completeTimers.contains(2)) || !(state.timerMode == .consecutive))  {
                 return .init(value: .thirdTimer(.timerButtonTapped))
             }
         case .thirdCounterTimer(.timer(.onDisappear)):
             state.thirdTimerState = state.thirdCounterTimerState.timerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(3) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true,
+               ((!state.completeTimers.contains(3) && state.completeTimers.contains(2)) || !(state.timerMode == .consecutive))  {
                 return .init(value: .thirdTimer(.timerButtonTapped))
             }
         case .fourthCounterTimer(.timer(.onAppear)):
             state.fourthCounterTimerState.timerState = state.fourthTimerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(4) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true,
+               ((!state.completeTimers.contains(4) && state.completeTimers.contains(3)) || !(state.timerMode == .consecutive))  {
                 return .init(value: .fourthTimer(.timerButtonTapped))
             }
         case .fourthCounterTimer(.timer(.onDisappear)):
             state.fourthTimerState = state.fourthCounterTimerState.timerState
-            if state.isTimersOnFire == true, (state.completeTimers.contains(4) || !(state.timerMode == .consecutive))  {
+            if state.isTimersOnFire == true,
+               ((!state.completeTimers.contains(4) && state.completeTimers.contains(3)) || !(state.timerMode == .consecutive))  {
                 return .init(value: .fourthTimer(.timerButtonTapped))
             }
         case .firstTimer(.timerHasBeenEnded), .firstCounterTimer(.timer(.timerHasBeenEnded)):
             timerHasBeenEnded(timerIndex: 1)
             if state.timerMode == .consecutive {
+                if state.secondCounterTimerState.timerState.isDisplayed {
+                    return .init(value: .secondCounterTimer(.timer(.timerButtonTapped)))
+                }
                 return .init(value: .secondTimer(.timerButtonTapped))
             }
         case .secondTimer(.timerHasBeenEnded), .secondCounterTimer(.timer(.timerHasBeenEnded)):
             timerHasBeenEnded(timerIndex: 2)
             if state.timerMode == .consecutive {
+                if state.thirdCounterTimerState.timerState.isDisplayed {
+                    return .init(value: .thirdCounterTimer(.timer(.timerButtonTapped)))
+                }
                 return .init(value: .thirdTimer(.timerButtonTapped))
             }
         case .thirdTimer(.timerHasBeenEnded), .thirdCounterTimer(.timer(.timerHasBeenEnded)):
             timerHasBeenEnded(timerIndex: 3)
             if state.timerMode == .consecutive {
+                if state.fourthCounterTimerState.timerState.isDisplayed {
+                    return .init(value: .fourthCounterTimer(.timer(.timerButtonTapped)))
+                }
                 return .init(value: .fourthTimer(.timerButtonTapped))
             }
         case .fourthTimer(.timerHasBeenEnded), .fourthCounterTimer(.timer(.timerHasBeenEnded)):

@@ -29,6 +29,8 @@ public struct TimerState: Equatable {
 
     public let timeInterval: TimeInterval
 
+    public var isDisplayed = false
+
     public let volumeForTimeInterval: Double
 
     public var step: Double {
