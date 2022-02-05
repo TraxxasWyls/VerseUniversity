@@ -39,28 +39,28 @@ let animatedTimersReducer = AnimatedTimersReducer.combine(
                 state.allTimersDone = true
             }
         }
-        func startNextInConcsecutive() -> Effect<AnimatedTimersAction, Never> {
+        func startNextInConcsecutive(checkForActive: Bool = false) -> Effect<AnimatedTimersAction, Never> {
            let nextTimerIndex = [1,2,3,4]
                 .filter { !state.completeTimers.contains($0) }
                 .min()
             switch nextTimerIndex {
             case 1:
-                if !state.firtstTimerState.isTimerActive && state.isTimersOnFire {
+                if checkForActive || !state.firtstTimerState.isTimerActive && state.isTimersOnFire {
                     return .init(value: .firstTimer(.timerButtonTapped))
                 }
                 return .none
             case 2:
-                if !state.secondTimerState.isTimerActive && state.isTimersOnFire {
+                if checkForActive || !state.secondTimerState.isTimerActive && state.isTimersOnFire {
                     return .init(value: .secondTimer(.timerButtonTapped))
                 }
                 return .none
             case 3:
-                if !state.thirdTimerState.isTimerActive && state.isTimersOnFire {
+                if checkForActive || !state.thirdTimerState.isTimerActive && state.isTimersOnFire {
                     return .init(value: .thirdTimer(.timerButtonTapped))
                 }
                 return .none
             case 4:
-                if !state.fourthTimerState.isTimerActive && state.isTimersOnFire {
+                if checkForActive || !state.fourthTimerState.isTimerActive && state.isTimersOnFire {
                     return .init(value: .fourthTimer(.timerButtonTapped))
                 }
                 return .none
@@ -180,13 +180,7 @@ let animatedTimersReducer = AnimatedTimersReducer.combine(
             case .parallel:
                 return parallelTimers()
             case .consecutive:
-                switch state.completeTimers.count {
-                case 0: return .init(value: .firstTimer(.timerButtonTapped))
-                case 1: return .init(value: .secondTimer(.timerButtonTapped))
-                case 2: return .init(value: .thirdTimer(.timerButtonTapped))
-                case 3: return .init(value: .fourthTimer(.timerButtonTapped))
-                default: return .none
-                }
+                return startNextInConcsecutive(checkForActive: true)
             default:
                 break
             }
