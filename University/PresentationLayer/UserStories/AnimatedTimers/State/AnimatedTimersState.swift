@@ -23,30 +23,30 @@ public struct AnimatedTimersState: Equatable {
     public var isConsecutive = false
 
     public var firtstTimerState: TimerState = TimerState(
-        progressMaxValue: 1,
-        stepInterval: 0.1,
-        step: 0.05882353,
+        timeInterval: 17,
+        volumeForTimeInterval: 1,
+        stepInterval: 1,
         shoudCancelOnDissappear: false,
         timerTheme: .init(startColor: .init(hex: "9796f0"), endColor: .init(hex: "fbc7d4"))
     )
     public var secondTimerState: TimerState = TimerState(
-        progressMaxValue: 0.2,
+        timeInterval: 5,
+        volumeForTimeInterval: 0.2,
         stepInterval: 0.5,
-        step: 0.02,
         shoudCancelOnDissappear: false,
         timerTheme: .init(startColor: .init(hex: "11998e"), endColor: .init(hex: "38ef7d"))
     )
     public var thirdTimerState: TimerState = TimerState(
-        progressMaxValue: 0.1,
+        timeInterval: 30,
+        volumeForTimeInterval: 0.4,
         stepInterval: 0.25,
-        step: 0.0033333333,
         shoudCancelOnDissappear: false,
         timerTheme: .init(startColor: .init(hex: "ff4e50"), endColor: .init(hex: "f9d423"))
     )
     public var fourthTimerState: TimerState = TimerState(
-        progressMaxValue: 1,
-        stepInterval: 0.05,
-        step: 0.004352941,
+        timeInterval: 17,
+        volumeForTimeInterval: 10.0,
+        stepInterval: 0.125,
         shoudCancelOnDissappear: false,
         timerTheme: .init(startColor: .init(hex: "56ccf2"), endColor: .init(hex: "2f80ed"))
     )

@@ -17,7 +17,7 @@ struct TimerView: View {
             ZStack {
                 ProgressRingView(
                     progress: viewStore.progress,
-                    progressIntervalLenght: viewStore.progressMaxValue,
+                    progressIntervalLenght: 1,
                     theme: viewStore.timerTheme
                 )
                     .frame(width: 120, height: 120)

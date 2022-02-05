@@ -41,19 +41,19 @@ let animatedTimersReducer = AnimatedTimersReducer.combine(
 
         switch action {
         case .firstTimer(.timerButtonTapped):
-            if state.firtstTimerState.progress == state.firtstTimerState.progressMaxValue, !state.allTimersDone {
+            if state.firtstTimerState.progress == 1, !state.allTimersDone {
                 state.firtstTimerState.isTimerActive = true
             }
         case .secondTimer(.timerButtonTapped):
-            if state.secondTimerState.progress == state.secondTimerState.progressMaxValue, !state.allTimersDone {
+            if state.secondTimerState.progress == 1, !state.allTimersDone {
                 state.secondTimerState.isTimerActive = true
             }
         case .thirdTimer(.timerButtonTapped):
-            if state.thirdTimerState.progress == state.thirdTimerState.progressMaxValue, !state.allTimersDone {
+            if state.thirdTimerState.progress == 1, !state.allTimersDone {
                 state.thirdTimerState.isTimerActive = true
             }
         case .fourthTimer(.timerButtonTapped):
-            if state.fourthTimerState.progress == state.fourthTimerState.progressMaxValue, !state.allTimersDone {
+            if state.fourthTimerState.progress == 1, !state.allTimersDone {
                 state.fourthTimerState.isTimerActive = true
             }
         case .firstCounterTimer(.timer(.onAppear)):

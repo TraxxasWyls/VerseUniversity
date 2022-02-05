@@ -20,12 +20,17 @@ let timerCounterReducer = TimerCounterReducer.combine(
     .init { state, action, environment in
         switch action {
         case .incrementButtonTapped:
-            return .init(value: .timer(.timerTick))
+            if state.timerState.progress + 0.01 >= 1 {
+                state.timerState.progress = 1
+                return .init(value: .timer(.timerHasBeenEnded))
+            } else {
+                state.timerState.progress += 0.01
+            }
         case .decrementButtonTapped:
             if state.timerState.progress <= 0 {
                 state.timerState.progress = 0
             } else {
-                state.timerState.progress -= state.timerState.step
+                state.timerState.progress -= 0.01
             }
             state.timerState.progress = max(state.timerState.progress, 0)
         default:

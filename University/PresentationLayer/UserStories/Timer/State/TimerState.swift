@@ -9,6 +9,12 @@ import Foundation
 import VERSE
 import Combine
 
+// MARK: - TimerCancellationID
+
+public struct TimerCancellationID: Hashable {
+    public let id: UUID = UUID()
+}
+
 // MARK: - TimerState
 
 public struct TimerState: Equatable {
@@ -17,15 +23,19 @@ public struct TimerState: Equatable {
 
     public var isTimerActive = false
 
-    public let id: UUID = .init()
+    public let cancellationID: TimerCancellationID = TimerCancellationID()
 
     public var progress: Double = 0
 
-    public let progressMaxValue: Double
+    public let timeInterval: TimeInterval
+
+    public let volumeForTimeInterval: Double
+
+    public var step: Double {
+        (volumeForTimeInterval / timeInterval) * stepInterval
+    }
 
     public let stepInterval: TimeInterval
-
-    public let step: Double
 
     public let shoudCancelOnDissappear: Bool
 
@@ -34,17 +44,17 @@ public struct TimerState: Equatable {
     public init(
         isTimerActive: Bool = false,
         progress: Double = 0,
-        progressMaxValue: Double = 1,
+        timeInterval: TimeInterval = 10,
+        volumeForTimeInterval: Double = 1.0,
         stepInterval: TimeInterval = 1,
-        step: Double = 0.15,
         shoudCancelOnDissappear: Bool = true,
         timerTheme: ProgressViewTheme = .init()
     ) {
         self.isTimerActive = isTimerActive
         self.progress = progress
-        self.progressMaxValue = progressMaxValue
+        self.timeInterval = timeInterval
+        self.volumeForTimeInterval = volumeForTimeInterval
         self.stepInterval = stepInterval
-        self.step = step
         self.shoudCancelOnDissappear = shoudCancelOnDissappear
         self.timerTheme = timerTheme
     }
