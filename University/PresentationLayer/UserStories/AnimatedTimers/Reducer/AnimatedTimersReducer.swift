@@ -39,12 +39,6 @@ let animatedTimersReducer = AnimatedTimersReducer.combine(
                 state.allTimersDone = true
             }
         }
-        func clearProgeresAfterCycle() {
-            if state.allTimersDone == true {
-                clearTimersProgessAndChangeActiveState()
-                state.allTimersDone = false
-            }
-        }
         func startNextInConcsecutive() -> Effect<AnimatedTimersAction, Never> {
            let nextTimerIndex = [1,2,3,4]
                 .filter { !state.completeTimers.contains($0) }
