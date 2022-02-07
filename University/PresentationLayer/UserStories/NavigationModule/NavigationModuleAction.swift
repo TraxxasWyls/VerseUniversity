@@ -20,4 +20,5 @@ public enum NavigationModuleAction: Equatable {
     case justEffect(JustEffectAction)
     case scrambler(ScramblerAction)
     case animatedTimers(AnimatedTimersAction)
+    case betterAnimatedTimers(BetterAnimatedTimersAction)
 }

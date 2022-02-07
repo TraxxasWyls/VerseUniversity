@@ -144,6 +144,17 @@ public struct NavigationModuleView: View {
                         ) {
                             Text("Animated Timers")
                         }
+                        NavigationLink(
+                            destination:
+                                BetterAnimatedTimersView(
+                                    store: store.scope(
+                                        state: \.betterAnimatedTimers,
+                                        action: NavigationModuleAction.betterAnimatedTimers
+                                    )
+                                )
+                        ) {
+                            Text("Better Animated Timers")
+                        }
                     }
                 }
                 .navigationBarTitle(Text("VERSE"))

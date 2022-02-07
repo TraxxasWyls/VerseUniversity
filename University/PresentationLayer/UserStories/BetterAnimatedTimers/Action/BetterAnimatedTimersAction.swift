@@ -11,7 +11,7 @@ import Foundation
 
 public enum BetterAnimatedTimersAction: Equatable {
     case timerItem(id: TimerID, action: TimerAction)
-    case timerCounterItem(id: TimerCounterID, action: TimerCounterAction)
+    case timerCounter(TimerCounterAction)
     case setNavigation(timerID: TimerID?)
     case consecutiveButtonTapped
     case playOrPauseButtonTapped

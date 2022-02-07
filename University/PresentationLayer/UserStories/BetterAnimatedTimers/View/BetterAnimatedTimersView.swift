@@ -16,21 +16,25 @@ struct BetterAnimatedTimersView: View {
         WithViewStore(store) { viewStore in
             VStack {
                 ForEachStore(store.scope(state: \.timerItems, action: BetterAnimatedTimersAction.timerItem(id:action:))) { itemStore in
-                    NavigationLink(
-                        tag: ,
-                        selection: viewStore.binding(
-                            get: { $0.selectedTimer?.id },
-                            send: BetterAnimatedTimersAction.setNavigation
-                        ),
-                        destination: IfLetStore(
-                            store.scope(
-                                state: { $0.selectedTimer?.value },
-                                action: { BetterAnimatedTimersAction.timerCounterItem(id: \.id ,action:$0) }
+                    WithViewStore(itemStore) { itemViewStore in
+                        NavigationLink(
+                            tag: itemViewStore.id,
+                            selection: viewStore.binding(
+                                get: { $0.selection?.id },
+                                send: BetterAnimatedTimersAction.setNavigation
                             ),
-                            then: TimerCounterView.init
-                        )
-                    ) {
-                        TimerView(store: itemStore)
+                            destination: {
+                                TimerCounterView(
+                                    store: store.scope(
+                                        state: \.timerCounterState,
+                                        action: BetterAnimatedTimersAction.timerCounter
+                                    )
+                                )
+                            }
+                        ) {
+                            TimerView(store: itemStore)
+                                .padding()
+                        }
                     }
                 }
                 HStack {
@@ -92,7 +96,7 @@ struct BetterAnimatedTimersView: View {
                     )
                 }
             )
-        }.navigationBarTitle(Text("Animated Timers"))
+        }.navigationBarTitle(Text("Better Animated Timers"))
     }
 }
 

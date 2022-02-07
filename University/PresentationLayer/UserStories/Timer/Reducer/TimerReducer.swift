@@ -40,6 +40,7 @@ let timerReducer = TimerReducer.init{ state, action, environment in
     case .onDisappear:
         state.isDisplayed = false
         if state.shoudCancelOnDissappear {
+            state.isTimerActive = false
             state.progress = 0
             return Effect.cancel(id: state.id)
         }

@@ -24,7 +24,7 @@ public struct BetterAnimatedTimersState: Equatable {
 
     public var previousTimerMode: TimerMode = .none
 
-    public var selectedTimer: Identified<TimerState.ID, TimerCounterState>?
+    public var selection: Identified<TimerState.ID, TimerCounterState>?
 
     public var timerItems: IdentifiedArrayOf<TimerState> = [
         TimerState(
@@ -61,5 +61,5 @@ public struct BetterAnimatedTimersState: Equatable {
         timerItems.map(\.id)
     }
 
-    public var timerCounterItems: IdentifiedArrayOf<TimerCounterState> = .init(repeating: TimerCounterState(), count: 4)
+    public var timerCounterState: TimerCounterState = TimerCounterState()
 }
