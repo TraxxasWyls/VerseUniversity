@@ -14,26 +14,33 @@ struct BetterAnimatedTimersView: View {
 
     var body: some View {
         WithViewStore(store) { viewStore in
+            let columns = [
+                GridItem(.flexible()),
+                GridItem(.flexible()),
+                GridItem(.flexible()),
+                GridItem(.flexible())
+            ]
             VStack {
-                ForEachStore(store.scope(state: \.timerItems, action: BetterAnimatedTimersAction.timerItem(id:action:))) { itemStore in
-                    WithViewStore(itemStore) { itemViewStore in
-                        NavigationLink(
-                            tag: itemViewStore.id,
-                            selection: viewStore.binding(
-                                get: { $0.selection?.id },
-                                send: BetterAnimatedTimersAction.setNavigation
-                            ),
-                            destination: {
-                                TimerCounterView(
-                                    store: store.scope(
-                                        state: \.timerCounterState,
-                                        action: BetterAnimatedTimersAction.timerCounter
+                LazyVGrid(columns: columns) {
+                    ForEachStore(store.scope(state: \.timerItems, action: BetterAnimatedTimersAction.timerItem(id:action:))) { itemStore in
+                        WithViewStore(itemStore) { itemViewStore in
+                            NavigationLink(
+                                tag: itemViewStore.id,
+                                selection: viewStore.binding(
+                                    get: { $0.selection?.id },
+                                    send: BetterAnimatedTimersAction.setNavigation
+                                ),
+                                destination: {
+                                    TimerCounterView(
+                                        store: store.scope(
+                                            state: \.timerCounterState,
+                                            action: BetterAnimatedTimersAction.timerCounter
+                                        )
                                     )
-                                )
+                                }
+                            ) {
+                                TimerView(store: itemStore).scaleEffect(0.5)
                             }
-                        ) {
-                            TimerView(store: itemStore)
-                                .padding()
                         }
                     }
                 }
@@ -67,39 +74,38 @@ struct BetterAnimatedTimersView: View {
                     }
                     .padding()
                 }
-            }
-            .sheet(
-                isPresented: viewStore.binding(
-                    get: \.allTimersDone,
-                    send: BetterAnimatedTimersAction.setSheet
-                ),
-                content: {
-                    HStack {
-                        Text.init("Done!")
-                            .font(.system(size: 80, weight: .bold, design: .rounded))
-                            .monospacedDigit()
-                            .transition(.opacity)
-                    }.padding()
-                    ZStack {
-                        Image(systemName: "checkmark.circle")
-                            .font(.system(size: 80, weight: .light))
-                    }
-                    .frame(width: 100, height: 100)
-                    .background(
+                .sheet(
+                    isPresented: viewStore.binding(
+                        get: \.allTimersDone,
+                        send: BetterAnimatedTimersAction.setSheet
+                    ),
+                    content: {
+                        HStack {
+                            Text.init("Done!")
+                                .font(.system(size: 80, weight: .bold, design: .rounded))
+                                .monospacedDigit()
+                                .transition(.opacity)
+                        }.padding()
                         ZStack {
-                            Circle()
-                                .fill(.green)
-                                .frame(width: 100, height: 100)//Button Size.
-                                .shadow(color: .gray.opacity(0.2), radius: 8, x: -8, y: -8)
-                                .shadow(color: .gray.opacity(0.2), radius: 8, x: 8, y: 8)
+                            Image(systemName: "checkmark.circle")
+                                .font(.system(size: 80, weight: .light))
                         }
-                    )
-                }
-            )
-        }.navigationBarTitle(Text("Better Animated Timers"))
+                        .frame(width: 100, height: 100)
+                        .background(
+                            ZStack {
+                                Circle()
+                                    .fill(.green)
+                                    .frame(width: 100, height: 100)//Button Size.
+                                    .shadow(color: .gray.opacity(0.2), radius: 8, x: -8, y: -8)
+                                    .shadow(color: .gray.opacity(0.2), radius: 8, x: 8, y: 8)
+                            }
+                        )
+                    }
+                )
+            }
+        }
     }
 }
-
 
 struct ContentView_BetterAnimatedTimersView: PreviewProvider {
     static var previews: some View {
