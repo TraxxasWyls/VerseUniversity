@@ -84,6 +84,12 @@
 		CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */; };
 		CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */; };
 		CBA0C9FB27AE870200A861EF /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0C9FA27AE870100A861EF /* CircleButton.swift */; };
+		CBD0DEF727B1762900389756 /* BetterAnimatedTimersReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DEEE27B1762900389756 /* BetterAnimatedTimersReducer.swift */; };
+		CBD0DEF827B1762900389756 /* BetterAnimatedTimersState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DEF027B1762900389756 /* BetterAnimatedTimersState.swift */; };
+		CBD0DEF927B1762900389756 /* BetterAnimatedTimersAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DEF227B1762900389756 /* BetterAnimatedTimersAction.swift */; };
+		CBD0DEFA27B1762900389756 /* BetterAnimatedTimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DEF427B1762900389756 /* BetterAnimatedTimersView.swift */; };
+		CBD0DEFB27B1762900389756 /* BetterAnimatedTimersEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DEF627B1762900389756 /* BetterAnimatedTimersEnvironment.swift */; };
+		CBD0DEFD27B1803E00389756 /* MutableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DEFC27B1803E00389756 /* MutableCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +171,12 @@
 		CB9CCDAA27A82077004FAA6A /* MegaCounterEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterEnvironment.swift; sourceTree = "<group>"; };
 		CB9CCDAB27A82077004FAA6A /* MegaCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaCounterAction.swift; sourceTree = "<group>"; };
 		CBA0C9FA27AE870100A861EF /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		CBD0DEEE27B1762900389756 /* BetterAnimatedTimersReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterAnimatedTimersReducer.swift; sourceTree = "<group>"; };
+		CBD0DEF027B1762900389756 /* BetterAnimatedTimersState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterAnimatedTimersState.swift; sourceTree = "<group>"; };
+		CBD0DEF227B1762900389756 /* BetterAnimatedTimersAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterAnimatedTimersAction.swift; sourceTree = "<group>"; };
+		CBD0DEF427B1762900389756 /* BetterAnimatedTimersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterAnimatedTimersView.swift; sourceTree = "<group>"; };
+		CBD0DEF627B1762900389756 /* BetterAnimatedTimersEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterAnimatedTimersEnvironment.swift; sourceTree = "<group>"; };
+		CBD0DEFC27B1803E00389756 /* MutableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -660,6 +672,7 @@
 		CB8A085827AD6F62006828AC /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				CBD0DEEC27B1762900389756 /* BetterAnimatedTimers */,
 				CB8A085D27AD893A006828AC /* AnimatedTimers */,
 				CB8A084827AD6B8C006828AC /* Timer */,
 				CB8A083827AD6AD6006828AC /* TimerCounter */,
@@ -759,6 +772,7 @@
 			isa = PBXGroup;
 			children = (
 				CB8A086F27AD8B6E006828AC /* Color.swift */,
+				CBD0DEFC27B1803E00389756 /* MutableCollection.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -813,6 +827,58 @@
 				CBA0C9FA27AE870100A861EF /* CircleButton.swift */,
 			);
 			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		CBD0DEEC27B1762900389756 /* BetterAnimatedTimers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0DEED27B1762900389756 /* Reducer */,
+				CBD0DEEF27B1762900389756 /* State */,
+				CBD0DEF127B1762900389756 /* Action */,
+				CBD0DEF327B1762900389756 /* View */,
+				CBD0DEF527B1762900389756 /* Environment */,
+			);
+			path = BetterAnimatedTimers;
+			sourceTree = "<group>";
+		};
+		CBD0DEED27B1762900389756 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0DEEE27B1762900389756 /* BetterAnimatedTimersReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CBD0DEEF27B1762900389756 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0DEF027B1762900389756 /* BetterAnimatedTimersState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CBD0DEF127B1762900389756 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0DEF227B1762900389756 /* BetterAnimatedTimersAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CBD0DEF327B1762900389756 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0DEF427B1762900389756 /* BetterAnimatedTimersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBD0DEF527B1762900389756 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CBD0DEF627B1762900389756 /* BetterAnimatedTimersEnvironment.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -891,6 +957,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD0DEF827B1762900389756 /* BetterAnimatedTimersState.swift in Sources */,
 				CB8A085327AD6B8C006828AC /* TimerReducer.swift in Sources */,
 				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
 				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
@@ -929,6 +996,8 @@
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB8A086B27AD893A006828AC /* AnimatedTimersView.swift in Sources */,
+				CBD0DEF727B1762900389756 /* BetterAnimatedTimersReducer.swift in Sources */,
+				CBD0DEFD27B1803E00389756 /* MutableCollection.swift in Sources */,
 				CB8A087027AD8B6E006828AC /* Color.swift in Sources */,
 				CB8A086927AD893A006828AC /* AnimatedTimersState.swift in Sources */,
 				CB8A083127AC663F006828AC /* ScramblerView.swift in Sources */,
@@ -944,6 +1013,7 @@
 				CB8A082F27AC663F006828AC /* ScramblerState.swift in Sources */,
 				CB8A085427AD6B8C006828AC /* TimerState.swift in Sources */,
 				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
+				CBD0DEFA27B1762900389756 /* BetterAnimatedTimersView.swift in Sources */,
 				CB1BDDFE27A8427B00D17723 /* NavigationModuleView.swift in Sources */,
 				CB1BDE2327AAE10C00D17723 /* SimpleBindingState.swift in Sources */,
 				CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */,
@@ -952,10 +1022,12 @@
 				CB8A084627AD6AD6006828AC /* TimerCounterView.swift in Sources */,
 				CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
+				CBD0DEF927B1762900389756 /* BetterAnimatedTimersAction.swift in Sources */,
 				CB8A081627AC420F006828AC /* JustEffectAction.swift in Sources */,
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
 				CB8A081727AC420F006828AC /* JustEffectView.swift in Sources */,
 				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
+				CBD0DEFB27B1762900389756 /* BetterAnimatedTimersEnvironment.swift in Sources */,
 				CB8A084727AD6AD6006828AC /* TimerCounterEnvironment.swift in Sources */,
 				CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */,
 				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,

@@ -21,11 +21,11 @@ let timerReducer = TimerReducer.init{ state, action, environment in
         return .when(
             state.isTimerActive,
             then: Effect.timer(
-                id: state.cancellationID,
+                id: state.id,
                 every: DispatchQueue.SchedulerTimeType.Stride(floatLiteral: state.stepInterval),
                 on: DispatchQueue.main.eraseToAnyScheduler()
             ).map { _ in TimerAction.timerTick },
-            else: .cancel(id: state.cancellationID)
+            else: .cancel(id: state.id)
         )
     case .timerTick:
         if state.progress + state.step >= 1 {
@@ -36,12 +36,12 @@ let timerReducer = TimerReducer.init{ state, action, environment in
         }
     case .timerHasBeenEnded:
         state.isTimerActive = false
-        return Effect.cancel(id: state.cancellationID)
+        return Effect.cancel(id: state.id)
     case .onDisappear:
         state.isDisplayed = false
         if state.shoudCancelOnDissappear {
             state.progress = 0
-            return Effect.cancel(id: state.cancellationID)
+            return Effect.cancel(id: state.id)
         }
     case .onAppear:
         state.isDisplayed = true

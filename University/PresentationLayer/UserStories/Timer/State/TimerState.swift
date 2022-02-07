@@ -9,21 +9,21 @@ import Foundation
 import VERSE
 import Combine
 
-// MARK: - TimerCancellationID
+// MARK: - TimerID
 
-public struct TimerCancellationID: Hashable {
+public struct TimerID: Hashable {
     public let id: UUID = UUID()
 }
 
 // MARK: - TimerState
 
-public struct TimerState: Equatable {
+public struct TimerState: Equatable, Identifiable {
 
     // MARK: - Properties
 
     public var isTimerActive = false
 
-    public let cancellationID: TimerCancellationID = TimerCancellationID()
+    public let id: TimerID = TimerID()
 
     public var progress: Double = 0
 
