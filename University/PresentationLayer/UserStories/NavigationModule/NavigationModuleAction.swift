@@ -21,4 +21,5 @@ public enum NavigationModuleAction: Equatable {
     case scrambler(ScramblerAction)
     case animatedTimers(AnimatedTimersAction)
     case betterAnimatedTimers(BetterAnimatedTimersAction)
+    case listInstantTransition(ListInstantTransitionAction)
 }

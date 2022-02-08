@@ -22,6 +22,7 @@ let betterAnimatedTimersReducer = BetterAnimatedTimersReducer.combine(
                 }
             )
         }
+        
         func clearTimersProgessAndChangeActiveState() {
             state.timerItems.updateEach {
                 $0.progress = 0
@@ -29,12 +30,14 @@ let betterAnimatedTimersReducer = BetterAnimatedTimersReducer.combine(
             }
             state.completeTimers = .init()
         }
+
         func timerHasBeenEnded(timerID: TimerID) {
             state.completeTimers.insert(timerID)
             if state.completeTimers.count == state.timerItems.count {
                 state.allTimersDone = true
             }
         }
+
         func buttonTapNextTimerIfNeeded(timerID: TimerID) -> Effect<BetterAnimatedTimersAction, Never> {
             let timerPosition = state.timerItemsIds.firstIndex(of: timerID) ?? 0
             let currentTimerContains = state.completeTimers.contains(timerID)
@@ -46,6 +49,7 @@ let betterAnimatedTimersReducer = BetterAnimatedTimersReducer.combine(
             }
             return .none
         }
+
         func startNextInConcsecutive(checkForActive: Bool = false) -> Effect<BetterAnimatedTimersAction, Never> {
             let nextTimerID = state.timerItemsIds
                 .filter { !state.completeTimers.contains($0) }

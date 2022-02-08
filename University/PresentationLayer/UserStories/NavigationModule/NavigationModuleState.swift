@@ -21,5 +21,5 @@ public struct NavigationModuleState: Equatable {
     public var scrambler: ScramblerState = ScramblerState()
     public var animatedTimers: AnimatedTimersState = AnimatedTimersState()
     public var betterAnimatedTimers: BetterAnimatedTimersState = BetterAnimatedTimersState()
-
+    public var listInstantTransition: ListInstantTransitionState = ListInstantTransitionState()
 }

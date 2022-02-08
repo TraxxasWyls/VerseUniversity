@@ -103,7 +103,7 @@ struct BetterAnimatedTimersView: View {
                     }
                 )
             }
-        }
+        }.navigationBarTitle("Better Animated Timer")
     }
 }
 

@@ -31,6 +31,11 @@
 		CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866827A7FC23007BD093 /* CounterAction.swift */; };
 		CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866A27A7FE36007BD093 /* CounterReducer.swift */; };
 		CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */; };
+		CB3154DD27B2CFEB0027B539 /* ListInstantTransitionReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154D427B2CFEB0027B539 /* ListInstantTransitionReducer.swift */; };
+		CB3154DE27B2CFEB0027B539 /* ListInstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154D627B2CFEB0027B539 /* ListInstantTransitionState.swift */; };
+		CB3154DF27B2CFEB0027B539 /* ListInstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154D827B2CFEB0027B539 /* ListInstantTransitionAction.swift */; };
+		CB3154E027B2CFEB0027B539 /* ListInstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154DA27B2CFEB0027B539 /* ListInstantTransitionView.swift */; };
+		CB3154E127B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154DC27B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift */; };
 		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
 		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
@@ -117,6 +122,11 @@
 		CB30866827A7FC23007BD093 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
 		CB30866A27A7FE36007BD093 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEnvironment.swift; sourceTree = "<group>"; };
+		CB3154D427B2CFEB0027B539 /* ListInstantTransitionReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionReducer.swift; sourceTree = "<group>"; };
+		CB3154D627B2CFEB0027B539 /* ListInstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionState.swift; sourceTree = "<group>"; };
+		CB3154D827B2CFEB0027B539 /* ListInstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionAction.swift; sourceTree = "<group>"; };
+		CB3154DA27B2CFEB0027B539 /* ListInstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionView.swift; sourceTree = "<group>"; };
+		CB3154DC27B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionEnvironment.swift; sourceTree = "<group>"; };
 		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
 		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
@@ -354,6 +364,58 @@
 				CB30866C27A7FE74007BD093 /* CounterEnvironment.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		CB3154D227B2CFEB0027B539 /* ListInstantTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CB3154D327B2CFEB0027B539 /* Reducer */,
+				CB3154D527B2CFEB0027B539 /* State */,
+				CB3154D727B2CFEB0027B539 /* Action */,
+				CB3154D927B2CFEB0027B539 /* View */,
+				CB3154DB27B2CFEB0027B539 /* Environment */,
+			);
+			path = ListInstantTransition;
+			sourceTree = "<group>";
+		};
+		CB3154D327B2CFEB0027B539 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB3154D427B2CFEB0027B539 /* ListInstantTransitionReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB3154D527B2CFEB0027B539 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB3154D627B2CFEB0027B539 /* ListInstantTransitionState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB3154D727B2CFEB0027B539 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB3154D827B2CFEB0027B539 /* ListInstantTransitionAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB3154D927B2CFEB0027B539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB3154DA27B2CFEB0027B539 /* ListInstantTransitionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB3154DB27B2CFEB0027B539 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB3154DC27B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 		CB8A07F227AB01DD006828AC /* FlexibleBinding */ = {
@@ -672,6 +734,7 @@
 		CB8A085827AD6F62006828AC /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				CB3154D227B2CFEB0027B539 /* ListInstantTransition */,
 				CBD0DEEC27B1762900389756 /* BetterAnimatedTimers */,
 				CB8A085D27AD893A006828AC /* AnimatedTimers */,
 				CB8A084827AD6B8C006828AC /* Timer */,
@@ -961,6 +1024,7 @@
 				CB8A085327AD6B8C006828AC /* TimerReducer.swift in Sources */,
 				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
 				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
+				CB3154DD27B2CFEB0027B539 /* ListInstantTransitionReducer.swift in Sources */,
 				CB8A086827AD893A006828AC /* AnimatedTimersReducer.swift in Sources */,
 				CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */,
 				CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */,
@@ -972,11 +1036,13 @@
 				CB8A082127AC4627006828AC /* NumberFactServiceImplementation.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB8A083027AC663F006828AC /* ScramblerAction.swift in Sources */,
+				CB3154E127B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift in Sources */,
 				CB8A085C27AD6FA2006828AC /* ProgressRingView.swift in Sources */,
 				CB8A085527AD6B8C006828AC /* TimerAction.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB8A082E27AC663F006828AC /* ScramblerReducer.swift in Sources */,
 				CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */,
+				CB3154E027B2CFEB0027B539 /* ListInstantTransitionView.swift in Sources */,
 				CB8A083227AC663F006828AC /* ScramblerEnvironment.swift in Sources */,
 				CB9CCD9527A80E09004FAA6A /* AnalyzableCounterReducer.swift in Sources */,
 				CB1BDE2527AAE10C00D17723 /* SimpleBindingView.swift in Sources */,
@@ -992,6 +1058,7 @@
 				CB8A084427AD6AD6006828AC /* TimerCounterState.swift in Sources */,
 				CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */,
 				CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */,
+				CB3154DE27B2CFEB0027B539 /* ListInstantTransitionState.swift in Sources */,
 				CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
@@ -1004,6 +1071,7 @@
 				CB8A086A27AD893A006828AC /* AnimatedTimersAction.swift in Sources */,
 				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
 				CB1BDE1627AAD55E00D17723 /* AlertAndSheetView.swift in Sources */,
+				CB3154DF27B2CFEB0027B539 /* ListInstantTransitionAction.swift in Sources */,
 				CB9CCD9D27A81ABE004FAA6A /* FibonacciCounterState.swift in Sources */,
 				CB8A081F27AC461B006828AC /* NumberFactService.swift in Sources */,
 				CB8A081427AC420F006828AC /* JustEffectReducer.swift in Sources */,

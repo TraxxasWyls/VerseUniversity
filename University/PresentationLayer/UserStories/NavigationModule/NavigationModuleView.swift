@@ -144,6 +144,8 @@ public struct NavigationModuleView: View {
                         ) {
                             Text("Animated Timers")
                         }
+                    }
+                    Section(header: Text("Upper Entermidiate")) {
                         NavigationLink(
                             destination:
                                 BetterAnimatedTimersView(
@@ -154,6 +156,17 @@ public struct NavigationModuleView: View {
                                 )
                         ) {
                             Text("Better Animated Timers")
+                        }
+                        NavigationLink(
+                            destination:
+                                ListInstantTransitionView(
+                                    store: store.scope(
+                                        state: \.listInstantTransition,
+                                        action: NavigationModuleAction.listInstantTransition
+                                    )
+                                )
+                        ) {
+                            Text("List Instant Transition")
                         }
                     }
                 }

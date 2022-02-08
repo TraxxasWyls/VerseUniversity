@@ -70,6 +70,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.betterAnimatedTimers,
         environment: BetterAnimatedTimersEnvironment()
     ),
+    listInstantTransitionReducer.pullback(
+        state: \.listInstantTransition,
+        action: /NavigationModuleAction.listInstantTransition,
+        environment: ListInstantTransitionEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

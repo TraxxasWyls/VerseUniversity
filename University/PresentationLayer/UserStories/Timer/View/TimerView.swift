@@ -33,7 +33,7 @@ struct TimerView: View {
             .onAppear {
                 viewStore.send(.onAppear)
             }
-        }.navigationBarTitle(Text("Timer"))
+        }
     }
 }
 
