@@ -25,7 +25,6 @@ public struct CounterView: View {
                     viewStore.send(.decrementButtonTapped)
                 } label: {
                     Image(systemName: "minus")
-                        .foregroundColor(.black)
                 }
                 Text("\(viewStore.count)")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
@@ -34,7 +33,6 @@ public struct CounterView: View {
                     viewStore.send(.incrementButtonTapped)
                 } label: {
                     Image(systemName: "plus")
-                        .foregroundColor(.black)
                 }
             }
         }
