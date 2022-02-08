@@ -22,4 +22,5 @@ public struct NavigationModuleState: Equatable {
     public var animatedTimers: AnimatedTimersState = AnimatedTimersState()
     public var betterAnimatedTimers: BetterAnimatedTimersState = BetterAnimatedTimersState()
     public var listInstantTransition: ListInstantTransitionState = ListInstantTransitionState()
+    public var listDeferedTransition: ListDeferedTransitionState = ListDeferedTransitionState()
 }

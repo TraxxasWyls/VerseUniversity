@@ -75,6 +75,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.listInstantTransition,
         environment: ListInstantTransitionEnvironment()
     ),
+    listDeferedTransitionReducer.pullback(
+        state: \.listDeferedTransition,
+        action: /NavigationModuleAction.listDeferedTransition,
+        environment: ListDeferedTransitionEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

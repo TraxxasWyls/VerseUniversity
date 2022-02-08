@@ -168,6 +168,17 @@ public struct NavigationModuleView: View {
                         ) {
                             Text("List Instant Transition")
                         }
+                        NavigationLink(
+                            destination:
+                                ListDeferedTransitionView(
+                                    store: store.scope(
+                                        state: \.listDeferedTransition,
+                                        action: NavigationModuleAction.listDeferedTransition
+                                    )
+                                )
+                        ) {
+                            Text("List Defered Transition")
+                        }
                     }
                 }
                 .navigationBarTitle(Text("VERSE"))

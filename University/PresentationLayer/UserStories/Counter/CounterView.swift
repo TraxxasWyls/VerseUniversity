@@ -21,12 +21,20 @@ public struct CounterView: View {
     public var body: some View {
         WithViewStore(store) { viewStore in
             HStack {
-                Button("-") {
+                Button {
                     viewStore.send(.decrementButtonTapped)
+                } label: {
+                    Image(systemName: "minus")
+                        .foregroundColor(.black)
                 }
                 Text("\(viewStore.count)")
-                Button("+") {
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .monospacedDigit()
+                Button {
                     viewStore.send(.incrementButtonTapped)
+                } label: {
+                    Image(systemName: "plus")
+                        .foregroundColor(.black)
                 }
             }
         }
