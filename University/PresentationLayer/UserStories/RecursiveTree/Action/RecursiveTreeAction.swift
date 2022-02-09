@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import VERSE
 
 // MARK: - RecursiveTreeAction
 
-public indirect enum RecursiveTreeAction: Equatable {
+public indirect enum RecursiveTreeAction: BindableAction, Equatable {
+    case binding(BindingAction<RecursiveTreeState>)
     case append
     case child(id: RecursiveTreeState.ID, action: RecursiveTreeAction)
     case remove(IndexSet)

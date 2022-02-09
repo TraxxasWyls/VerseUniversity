@@ -10,13 +10,13 @@ import VERSE
 
 // MARK: - RecursiveTreeState
 
-public struct RecursiveTreeState: Equatable, Identifiable {
+public struct RecursiveTreeState: Equatable, Identifiable, Hashable {
 
     // MARK: - Properties
 
     public let id = UUID()
 
-    public let name: String
+    @BindableState public var name: String
 
     public var children: IdentifiedArrayOf<RecursiveTreeState> = []
 }
