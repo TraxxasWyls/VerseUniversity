@@ -53,6 +53,8 @@
 		CB31552127B41ADA0027B539 /* DownloadingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */; };
 		CB31552327B41BD20027B539 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552227B41BD20027B539 /* Reducer.swift */; };
 		CB31552527B421600027B539 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552427B421600027B539 /* String.swift */; };
+		CB31552927B44C460027B539 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552727B44C460027B539 /* DownloadService.swift */; };
+		CB31552A27B44C460027B539 /* DownloadServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552827B44C460027B539 /* DownloadServiceImplementation.swift */; };
 		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
 		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
@@ -161,6 +163,8 @@
 		CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingEnvironment.swift; sourceTree = "<group>"; };
 		CB31552227B41BD20027B539 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		CB31552427B421600027B539 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CB31552727B44C460027B539 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		CB31552827B44C460027B539 /* DownloadServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadServiceImplementation.swift; sourceTree = "<group>"; };
 		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
 		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
@@ -608,6 +612,15 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
+		CB31552627B44C330027B539 /* DownloadService */ = {
+			isa = PBXGroup;
+			children = (
+				CB31552727B44C460027B539 /* DownloadService.swift */,
+				CB31552827B44C460027B539 /* DownloadServiceImplementation.swift */,
+			);
+			path = DownloadService;
+			sourceTree = "<group>";
+		};
 		CB8A07F227AB01DD006828AC /* FlexibleBinding */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +754,7 @@
 		CB8A081C27AC45FB006828AC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CB31552627B44C330027B539 /* DownloadService */,
 				CB8A083327AC6CC9006828AC /* ScrumbleGenerator */,
 				CB8A081D27AC4608006828AC /* NumberFactService */,
 			);
@@ -1226,6 +1240,7 @@
 				CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */,
 				CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */,
 				CB8A085727AD6B8C006828AC /* TimerEnvironment.swift in Sources */,
+				CB31552927B44C460027B539 /* DownloadService.swift in Sources */,
 				CB8A085627AD6B8C006828AC /* TimerView.swift in Sources */,
 				CB9CCDAF27A82077004FAA6A /* MegaCounterEnvironment.swift in Sources */,
 				CB1BDE1427AAC9E400D17723 /* AlertAndSheetReducer.swift in Sources */,
@@ -1267,6 +1282,7 @@
 				CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
+				CB31552A27B44C460027B539 /* DownloadServiceImplementation.swift in Sources */,
 				CB8A086B27AD893A006828AC /* AnimatedTimersView.swift in Sources */,
 				CB31550D27B4172F0027B539 /* RecursiveTreeReducer.swift in Sources */,
 				CBD0DEF727B1762900389756 /* BetterAnimatedTimersReducer.swift in Sources */,
