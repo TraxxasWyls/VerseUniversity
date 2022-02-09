@@ -13,46 +13,33 @@ struct RecursiveTreeView: View {
     let store: Store<RecursiveTreeState, RecursiveTreeAction>
 
     var body: some View {
-        WithViewStore(store) { viewStore in
+        WithViewStore(store.scope(state: \.name)) { viewStore in
             Form {
-                ForEach(viewStore.items) { item in
-                    NavigationLink(
-                        tag: item.id,
-                        selection: viewStore.binding(
-                            get: { $0.selection?.id },
-                            send: RecursiveTreeAction.setNavigation
+                Section {
+                    ForEachStore(
+                        store.scope(
+                            state: \.children,
+                            action: RecursiveTreeAction.child(id:action:)
                         )
-                    ) {
-                        IfLetStore(
-                            store.scope(
-                                state:  { $0.selection?.value },
-                                action: RecursiveTreeAction.counter
-                            ),
-                            then: { store in
-                                CounterView(store: store)
-                            },
-                            else: ProgressView()
-                        )
-                    } label: {
-                        HStack {
-                            ZStack {
-                                Circle()
-                                    .fill(.gray)
-                                    .frame(width: 25, height: 25)
-                                Circle()
-                                    .fill(item.color)
-                                    .frame(width: 20, height: 20)
+                    ) { childStore in
+                        WithViewStore(childStore) { childViewStore in
+                            HStack {
+                                Text(childViewStore.name)
+                                Spacer()
+                                NavigationLink(destination: RecursiveTreeView(store: childStore)) {
+                                    Text("")
+                                }
                             }
-                            Text(item.title)
-                            Spacer()
-                            item.isLoading ? ProgressView() : nil
-                            Spacer()
-                            Text("\(item.count)")
                         }
                     }
-                }
+                    .onDelete { viewStore.send(.remove($0)) }
+                }.textCase(nil)
             }
-        }.navigationBarTitle("List Instant Transition")
+            .navigationBarTitle(viewStore.state.isEmpty ? "Recursion" : viewStore.state)
+            .navigationBarItems(
+                trailing: Button("Add") { viewStore.send(.append) }
+            )
+        }
     }
 }
 
@@ -60,7 +47,7 @@ struct ContentView_RecursiveTreeView: PreviewProvider {
     static var previews: some View {
         RecursiveTreeView(
             store: .init(
-                initialState: RecursiveTreeState(),
+                initialState: .random(),
                 reducer: recursiveTreeReducer,
                 environment: RecursiveTreeEnvironment()
             )

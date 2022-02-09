@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - RecursiveTreeAction
 
-public enum RecursiveTreeAction: Equatable {
-    case loadingCompleted(id: UUID)
-    case counter(CounterAction)
-    case setNavigation(id: UUID?)
+public indirect enum RecursiveTreeAction: Equatable {
+    case append
+    case child(id: RecursiveTreeState.ID, action: RecursiveTreeAction)
+    case remove(IndexSet)
 }

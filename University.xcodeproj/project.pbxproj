@@ -51,6 +51,8 @@
 		CB31551F27B41ADA0027B539 /* DownloadingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551827B41ADA0027B539 /* DownloadingAction.swift */; };
 		CB31552027B41ADA0027B539 /* DownloadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551A27B41ADA0027B539 /* DownloadingView.swift */; };
 		CB31552127B41ADA0027B539 /* DownloadingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */; };
+		CB31552327B41BD20027B539 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552227B41BD20027B539 /* Reducer.swift */; };
+		CB31552527B421600027B539 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552427B421600027B539 /* String.swift */; };
 		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
 		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
@@ -157,6 +159,8 @@
 		CB31551827B41ADA0027B539 /* DownloadingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingAction.swift; sourceTree = "<group>"; };
 		CB31551A27B41ADA0027B539 /* DownloadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingView.swift; sourceTree = "<group>"; };
 		CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingEnvironment.swift; sourceTree = "<group>"; };
+		CB31552227B41BD20027B539 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		CB31552427B421600027B539 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
 		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
@@ -1025,6 +1029,8 @@
 			children = (
 				CB8A086F27AD8B6E006828AC /* Color.swift */,
 				CBD0DEFC27B1803E00389756 /* MutableCollection.swift */,
+				CB31552227B41BD20027B539 /* Reducer.swift */,
+				CB31552427B421600027B539 /* String.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -1257,6 +1263,7 @@
 				CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */,
 				CB3154DE27B2CFEB0027B539 /* ListInstantTransitionState.swift in Sources */,
 				CB3154EF27B2E11C0027B539 /* ListDeferedTransitionAction.swift in Sources */,
+				CB31552527B421600027B539 /* String.swift in Sources */,
 				CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
@@ -1264,6 +1271,7 @@
 				CB31550D27B4172F0027B539 /* RecursiveTreeReducer.swift in Sources */,
 				CBD0DEF727B1762900389756 /* BetterAnimatedTimersReducer.swift in Sources */,
 				CBD0DEFD27B1803E00389756 /* MutableCollection.swift in Sources */,
+				CB31552327B41BD20027B539 /* Reducer.swift in Sources */,
 				CB8A087027AD8B6E006828AC /* Color.swift in Sources */,
 				CB8A086927AD893A006828AC /* AnimatedTimersState.swift in Sources */,
 				CB8A083127AC663F006828AC /* ScramblerView.swift in Sources */,

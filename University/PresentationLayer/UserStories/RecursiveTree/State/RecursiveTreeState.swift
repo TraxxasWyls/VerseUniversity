@@ -7,22 +7,34 @@
 
 import Foundation
 import VERSE
-import SwiftUI
 
 // MARK: - RecursiveTreeState
 
-public struct RecursiveTreeState: Equatable {
+public struct RecursiveTreeState: Equatable, Identifiable {
 
     // MARK: - Properties
 
-    public var items: IdentifiedArrayOf<SimpleLoadableListItemState> = [
-        SimpleLoadableListItemState(color: .gray, title: "gray one", count: 7),
-        SimpleLoadableListItemState(color: .blue, title: "blue one", count: 17),
-        SimpleLoadableListItemState(color: .red, title: "red one", count: 117),
-        SimpleLoadableListItemState(color: .green, title: "green one", count: 1117),
-        SimpleLoadableListItemState(color: .cyan, title: "cyan one", count: 11117),
-        SimpleLoadableListItemState(color: .yellow, title: "yellow one", count: 0),
-    ]
+    public let id = UUID()
 
-    public var selection: Identified<UUID, CounterState?>?
+    public let name: String
+
+    public var children: IdentifiedArrayOf<RecursiveTreeState> = []
+}
+
+// MARK: - Random
+
+extension RecursiveTreeState {
+
+    private static let maxChildrenCount = 10
+
+    static func random(childrenCount: Int = maxChildrenCount) -> RecursiveTreeState {
+        .init(
+            name: childrenCount == maxChildrenCount ? "" : String.randomString(length: childrenCount + 1),
+            children: .init(
+                (0..<childrenCount).map { _ in
+                        .random(childrenCount: childrenCount - 1)
+                }
+            )
+        )
+    }
 }
