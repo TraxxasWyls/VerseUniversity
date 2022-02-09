@@ -23,4 +23,6 @@ public enum NavigationModuleAction: Equatable {
     case betterAnimatedTimers(BetterAnimatedTimersAction)
     case listInstantTransition(ListInstantTransitionAction)
     case listDeferedTransition(ListDeferedTransitionAction)
+    case recursiveTree(RecursiveTreeAction)
+    case downloading(DownloadingAction)
 }

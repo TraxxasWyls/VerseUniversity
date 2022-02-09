@@ -180,6 +180,30 @@ public struct NavigationModuleView: View {
                             Text("List Defered Transition")
                         }
                     }
+                    Section(header: Text("Advanced")) {
+                        NavigationLink(
+                            destination:
+                                RecursiveTreeView(
+                                    store: store.scope(
+                                        state: \.recursiveTree,
+                                        action: NavigationModuleAction.recursiveTree
+                                    )
+                                )
+                        ) {
+                            Text("Recursive Tree")
+                        }
+                        NavigationLink(
+                            destination:
+                                DownloadingView(
+                                    store: store.scope(
+                                        state: \.downloading,
+                                        action: NavigationModuleAction.downloading
+                                    )
+                                )
+                        ) {
+                            Text("Downloading")
+                        }
+                    }
                 }
                 .navigationBarTitle(Text("VERSE"))
             }

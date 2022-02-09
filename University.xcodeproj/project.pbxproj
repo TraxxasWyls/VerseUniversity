@@ -41,6 +41,16 @@
 		CB3154EF27B2E11C0027B539 /* ListDeferedTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154E827B2E11C0027B539 /* ListDeferedTransitionAction.swift */; };
 		CB3154F027B2E11C0027B539 /* ListDeferedTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154EA27B2E11C0027B539 /* ListDeferedTransitionView.swift */; };
 		CB3154F127B2E11C0027B539 /* ListDeferedTransitionEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3154EC27B2E11C0027B539 /* ListDeferedTransitionEnvironment.swift */; };
+		CB31550D27B4172F0027B539 /* RecursiveTreeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31550427B4172F0027B539 /* RecursiveTreeReducer.swift */; };
+		CB31550E27B4172F0027B539 /* RecursiveTreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31550627B4172F0027B539 /* RecursiveTreeState.swift */; };
+		CB31550F27B4172F0027B539 /* RecursiveTreeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31550827B4172F0027B539 /* RecursiveTreeAction.swift */; };
+		CB31551027B4172F0027B539 /* RecursiveTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31550A27B4172F0027B539 /* RecursiveTreeView.swift */; };
+		CB31551127B4172F0027B539 /* RecursiveTreeEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31550C27B4172F0027B539 /* RecursiveTreeEnvironment.swift */; };
+		CB31551D27B41ADA0027B539 /* DownloadingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551427B41ADA0027B539 /* DownloadingReducer.swift */; };
+		CB31551E27B41ADA0027B539 /* DownloadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551627B41ADA0027B539 /* DownloadingState.swift */; };
+		CB31551F27B41ADA0027B539 /* DownloadingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551827B41ADA0027B539 /* DownloadingAction.swift */; };
+		CB31552027B41ADA0027B539 /* DownloadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551A27B41ADA0027B539 /* DownloadingView.swift */; };
+		CB31552127B41ADA0027B539 /* DownloadingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */; };
 		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
 		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
@@ -137,6 +147,16 @@
 		CB3154E827B2E11C0027B539 /* ListDeferedTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDeferedTransitionAction.swift; sourceTree = "<group>"; };
 		CB3154EA27B2E11C0027B539 /* ListDeferedTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDeferedTransitionView.swift; sourceTree = "<group>"; };
 		CB3154EC27B2E11C0027B539 /* ListDeferedTransitionEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDeferedTransitionEnvironment.swift; sourceTree = "<group>"; };
+		CB31550427B4172F0027B539 /* RecursiveTreeReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeReducer.swift; sourceTree = "<group>"; };
+		CB31550627B4172F0027B539 /* RecursiveTreeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeState.swift; sourceTree = "<group>"; };
+		CB31550827B4172F0027B539 /* RecursiveTreeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeAction.swift; sourceTree = "<group>"; };
+		CB31550A27B4172F0027B539 /* RecursiveTreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeView.swift; sourceTree = "<group>"; };
+		CB31550C27B4172F0027B539 /* RecursiveTreeEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeEnvironment.swift; sourceTree = "<group>"; };
+		CB31551427B41ADA0027B539 /* DownloadingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingReducer.swift; sourceTree = "<group>"; };
+		CB31551627B41ADA0027B539 /* DownloadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingState.swift; sourceTree = "<group>"; };
+		CB31551827B41ADA0027B539 /* DownloadingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingAction.swift; sourceTree = "<group>"; };
+		CB31551A27B41ADA0027B539 /* DownloadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingView.swift; sourceTree = "<group>"; };
+		CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadingEnvironment.swift; sourceTree = "<group>"; };
 		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
 		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
@@ -480,6 +500,110 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
+		CB31550227B4172F0027B539 /* RecursiveTree */ = {
+			isa = PBXGroup;
+			children = (
+				CB31550327B4172F0027B539 /* Reducer */,
+				CB31550527B4172F0027B539 /* State */,
+				CB31550727B4172F0027B539 /* Action */,
+				CB31550927B4172F0027B539 /* View */,
+				CB31550B27B4172F0027B539 /* Environment */,
+			);
+			path = RecursiveTree;
+			sourceTree = "<group>";
+		};
+		CB31550327B4172F0027B539 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB31550427B4172F0027B539 /* RecursiveTreeReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB31550527B4172F0027B539 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB31550627B4172F0027B539 /* RecursiveTreeState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB31550727B4172F0027B539 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB31550827B4172F0027B539 /* RecursiveTreeAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB31550927B4172F0027B539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB31550A27B4172F0027B539 /* RecursiveTreeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB31550B27B4172F0027B539 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB31550C27B4172F0027B539 /* RecursiveTreeEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB31551227B41ADA0027B539 /* Downloading */ = {
+			isa = PBXGroup;
+			children = (
+				CB31551327B41ADA0027B539 /* Reducer */,
+				CB31551527B41ADA0027B539 /* State */,
+				CB31551727B41ADA0027B539 /* Action */,
+				CB31551927B41ADA0027B539 /* View */,
+				CB31551B27B41ADA0027B539 /* Environment */,
+			);
+			path = Downloading;
+			sourceTree = "<group>";
+		};
+		CB31551327B41ADA0027B539 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB31551427B41ADA0027B539 /* DownloadingReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB31551527B41ADA0027B539 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB31551627B41ADA0027B539 /* DownloadingState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB31551727B41ADA0027B539 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB31551827B41ADA0027B539 /* DownloadingAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB31551927B41ADA0027B539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB31551A27B41ADA0027B539 /* DownloadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB31551B27B41ADA0027B539 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB31551C27B41ADA0027B539 /* DownloadingEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		CB8A07F227AB01DD006828AC /* FlexibleBinding */ = {
 			isa = PBXGroup;
 			children = (
@@ -796,6 +920,8 @@
 		CB8A085827AD6F62006828AC /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				CB31551227B41ADA0027B539 /* Downloading */,
+				CB31550227B4172F0027B539 /* RecursiveTree */,
 				CB3154E227B2E11C0027B539 /* ListDeferedTransition */,
 				CB3154D227B2CFEB0027B539 /* ListInstantTransition */,
 				CBD0DEEC27B1762900389756 /* BetterAnimatedTimers */,
@@ -1085,6 +1211,7 @@
 			files = (
 				CBD0DEF827B1762900389756 /* BetterAnimatedTimersState.swift in Sources */,
 				CB8A085327AD6B8C006828AC /* TimerReducer.swift in Sources */,
+				CB31551127B4172F0027B539 /* RecursiveTreeEnvironment.swift in Sources */,
 				CB9CCDB027A82077004FAA6A /* MegaCounterAction.swift in Sources */,
 				CB30866927A7FC23007BD093 /* CounterAction.swift in Sources */,
 				CB3154DD27B2CFEB0027B539 /* ListInstantTransitionReducer.swift in Sources */,
@@ -1098,6 +1225,7 @@
 				CB1BDE1427AAC9E400D17723 /* AlertAndSheetReducer.swift in Sources */,
 				CB9CCD9327A80E09004FAA6A /* AnalyzableCounterEnvironment.swift in Sources */,
 				CB8A082127AC4627006828AC /* NumberFactServiceImplementation.swift in Sources */,
+				CB31552027B41ADA0027B539 /* DownloadingView.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB8A083027AC663F006828AC /* ScramblerAction.swift in Sources */,
 				CB3154E127B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift in Sources */,
@@ -1106,11 +1234,13 @@
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB8A082E27AC663F006828AC /* ScramblerReducer.swift in Sources */,
 				CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */,
+				CB31551F27B41ADA0027B539 /* DownloadingAction.swift in Sources */,
 				CB3154E027B2CFEB0027B539 /* ListInstantTransitionView.swift in Sources */,
 				CB8A083227AC663F006828AC /* ScramblerEnvironment.swift in Sources */,
 				CB9CCD9527A80E09004FAA6A /* AnalyzableCounterReducer.swift in Sources */,
 				CB1BDE2527AAE10C00D17723 /* SimpleBindingView.swift in Sources */,
 				CB1BDE2227AAE10C00D17723 /* SimpleBindingReducer.swift in Sources */,
+				CB31550F27B4172F0027B539 /* RecursiveTreeAction.swift in Sources */,
 				CB1BDE0427A86F8500D17723 /* NavigationModuleEnvironment.swift in Sources */,
 				CB8A083727AC6CE7006828AC /* ScrumbleGeneratorImplementation.swift in Sources */,
 				CB9CCD9627A80E09004FAA6A /* AnalyzableCounterView.swift in Sources */,
@@ -1119,7 +1249,9 @@
 				CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */,
 				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
 				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
+				CB31551027B4172F0027B539 /* RecursiveTreeView.swift in Sources */,
 				CB3154ED27B2E11C0027B539 /* ListDeferedTransitionReducer.swift in Sources */,
+				CB31552127B41ADA0027B539 /* DownloadingEnvironment.swift in Sources */,
 				CB8A084427AD6AD6006828AC /* TimerCounterState.swift in Sources */,
 				CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */,
 				CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */,
@@ -1129,6 +1261,7 @@
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB8A086B27AD893A006828AC /* AnimatedTimersView.swift in Sources */,
+				CB31550D27B4172F0027B539 /* RecursiveTreeReducer.swift in Sources */,
 				CBD0DEF727B1762900389756 /* BetterAnimatedTimersReducer.swift in Sources */,
 				CBD0DEFD27B1803E00389756 /* MutableCollection.swift in Sources */,
 				CB8A087027AD8B6E006828AC /* Color.swift in Sources */,
@@ -1149,11 +1282,13 @@
 				CB9CCD9427A80E09004FAA6A /* AnalyzableCounterAction.swift in Sources */,
 				CBD0DEFA27B1762900389756 /* BetterAnimatedTimersView.swift in Sources */,
 				CB1BDDFE27A8427B00D17723 /* NavigationModuleView.swift in Sources */,
+				CB31551E27B41ADA0027B539 /* DownloadingState.swift in Sources */,
 				CB1BDE2327AAE10C00D17723 /* SimpleBindingState.swift in Sources */,
 				CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */,
 				CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */,
 				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
 				CB8A084627AD6AD6006828AC /* TimerCounterView.swift in Sources */,
+				CB31550E27B4172F0027B539 /* RecursiveTreeState.swift in Sources */,
 				CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
 				CBD0DEF927B1762900389756 /* BetterAnimatedTimersAction.swift in Sources */,
@@ -1161,6 +1296,7 @@
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
 				CB8A081727AC420F006828AC /* JustEffectView.swift in Sources */,
 				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
+				CB31551D27B41ADA0027B539 /* DownloadingReducer.swift in Sources */,
 				CBD0DEFB27B1762900389756 /* BetterAnimatedTimersEnvironment.swift in Sources */,
 				CB8A084727AD6AD6006828AC /* TimerCounterEnvironment.swift in Sources */,
 				CB1BDE1027AAC63800D17723 /* AlertAndSheetAction.swift in Sources */,

@@ -80,6 +80,16 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.listDeferedTransition,
         environment: ListDeferedTransitionEnvironment()
     ),
+    recursiveTreeReducer.pullback(
+        state: \.recursiveTree,
+        action: /NavigationModuleAction.recursiveTree,
+        environment: RecursiveTreeEnvironment()
+    ),
+    downloadingReducer.pullback(
+        state: \.downloading,
+        action: /NavigationModuleAction.downloading,
+        environment: DownloadingEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

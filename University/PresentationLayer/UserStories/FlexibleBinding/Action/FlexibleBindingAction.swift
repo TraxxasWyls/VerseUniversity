@@ -12,7 +12,6 @@ import VERSE
 // MARK: - FlexibleBindingAction
 
 public enum FlexibleBindingAction: BindableAction, Equatable {
-
     case binding(BindingAction<FlexibleBindingState>)
     case counter(CounterAction)
     case controlReseted
