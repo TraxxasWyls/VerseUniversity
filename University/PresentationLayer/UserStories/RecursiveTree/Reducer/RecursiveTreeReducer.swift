@@ -12,7 +12,6 @@ import SwiftUI
 typealias RecursiveTreeReducer = Reducer<RecursiveTreeState, RecursiveTreeAction, RecursiveTreeEnvironment>
 
 let recursiveTreeReducer = RecursiveTreeReducer.recursive{ reducer, state, action, environment in
-    print(state.name)
     switch action {
     case .append:
         state.children.append(.init(name: .randomString(length: Int(arc4random()) % 10)))
@@ -23,11 +22,14 @@ let recursiveTreeReducer = RecursiveTreeReducer.recursive{ reducer, state, actio
                 action: /RecursiveTreeAction.child(id:action:),
                 environment: { $0 }
             )
+            .binding()
             .run(&state, action, environment)
     case let .remove(offset):
         state.children.remove(atOffsets: offset)
+    case .textChanged(let text):
+        state.name = text
     default:
         break
     }
     return .none
-}
+}.binding()

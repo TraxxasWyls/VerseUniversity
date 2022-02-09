@@ -25,7 +25,7 @@ public struct RecursiveTreeState: Equatable, Identifiable, Hashable {
 
 extension RecursiveTreeState {
 
-    private static let maxChildrenCount = 10
+    private static let maxChildrenCount = 6
 
     static func random(childrenCount: Int = maxChildrenCount) -> RecursiveTreeState {
         .init(

@@ -24,7 +24,10 @@ struct RecursiveTreeView: View {
                     ) { childStore in
                         WithViewStore(childStore) { childViewStore in
                             HStack {
-                                TextField("", text: childViewStore.binding(\.$name))
+                                TextField("", text: childViewStore.binding(
+                                    get: \.name,
+                                    send: SimpleBindingAction.textChanged
+                                ))
                                 Spacer()
                                 NavigationLink(destination: RecursiveTreeView(store: childStore)) {
                                     Text("")

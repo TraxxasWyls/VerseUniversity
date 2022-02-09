@@ -15,4 +15,5 @@ public indirect enum RecursiveTreeAction: BindableAction, Equatable {
     case append
     case child(id: RecursiveTreeState.ID, action: RecursiveTreeAction)
     case remove(IndexSet)
+    case textChanged(String)
 }
