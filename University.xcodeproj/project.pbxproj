@@ -55,6 +55,16 @@
 		CB31552527B421600027B539 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552427B421600027B539 /* String.swift */; };
 		CB31552927B44C460027B539 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552727B44C460027B539 /* DownloadService.swift */; };
 		CB31552A27B44C460027B539 /* DownloadServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552827B44C460027B539 /* DownloadServiceImplementation.swift */; };
+		CB31553827B540E20027B539 /* DownloadableImageViewerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31552F27B540E10027B539 /* DownloadableImageViewerReducer.swift */; };
+		CB31553927B540E20027B539 /* DownloadableImageViewerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31553127B540E10027B539 /* DownloadableImageViewerState.swift */; };
+		CB31553A27B540E20027B539 /* DownloadableImageViewerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31553327B540E10027B539 /* DownloadableImageViewerAction.swift */; };
+		CB31553B27B540E20027B539 /* DownloadableImageViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31553527B540E10027B539 /* DownloadableImageViewerView.swift */; };
+		CB31553C27B540E20027B539 /* DownloadableImageViewerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31553727B540E20027B539 /* DownloadableImageViewerEnvironment.swift */; };
+		CB31554027B5433F0027B539 /* DownloadableImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31553F27B5433F0027B539 /* DownloadableImageState.swift */; };
+		CB31554327B54CB50027B539 /* DownloadableDataAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554227B54CB50027B539 /* DownloadableDataAction.swift */; };
+		CB31554627B550D90027B539 /* DownloadableDataReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554527B550D90027B539 /* DownloadableDataReducer.swift */; };
+		CB31554927B5513E0027B539 /* DownloadableDataEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554827B5513E0027B539 /* DownloadableDataEnvironment.swift */; };
+		CB31554C27B57C8F0027B539 /* DownloadableDataButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554B27B57C8F0027B539 /* DownloadableDataButton.swift */; };
 		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
 		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
@@ -165,6 +175,16 @@
 		CB31552427B421600027B539 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CB31552727B44C460027B539 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		CB31552827B44C460027B539 /* DownloadServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadServiceImplementation.swift; sourceTree = "<group>"; };
+		CB31552F27B540E10027B539 /* DownloadableImageViewerReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImageViewerReducer.swift; sourceTree = "<group>"; };
+		CB31553127B540E10027B539 /* DownloadableImageViewerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImageViewerState.swift; sourceTree = "<group>"; };
+		CB31553327B540E10027B539 /* DownloadableImageViewerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImageViewerAction.swift; sourceTree = "<group>"; };
+		CB31553527B540E10027B539 /* DownloadableImageViewerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImageViewerView.swift; sourceTree = "<group>"; };
+		CB31553727B540E20027B539 /* DownloadableImageViewerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImageViewerEnvironment.swift; sourceTree = "<group>"; };
+		CB31553F27B5433F0027B539 /* DownloadableImageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImageState.swift; sourceTree = "<group>"; };
+		CB31554227B54CB50027B539 /* DownloadableDataAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataAction.swift; sourceTree = "<group>"; };
+		CB31554527B550D90027B539 /* DownloadableDataReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataReducer.swift; sourceTree = "<group>"; };
+		CB31554827B5513E0027B539 /* DownloadableDataEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataEnvironment.swift; sourceTree = "<group>"; };
+		CB31554B27B57C8F0027B539 /* DownloadableDataButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataButton.swift; sourceTree = "<group>"; };
 		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
 		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
@@ -563,6 +583,7 @@
 		CB31551227B41ADA0027B539 /* Downloading */ = {
 			isa = PBXGroup;
 			children = (
+				CB31552B27B53E710027B539 /* Submodules */,
 				CB31551327B41ADA0027B539 /* Reducer */,
 				CB31551527B41ADA0027B539 /* State */,
 				CB31551727B41ADA0027B539 /* Action */,
@@ -619,6 +640,119 @@
 				CB31552827B44C460027B539 /* DownloadServiceImplementation.swift */,
 			);
 			path = DownloadService;
+			sourceTree = "<group>";
+		};
+		CB31552B27B53E710027B539 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				CB31553D27B5430E0027B539 /* DownloadableData */,
+				CB31552D27B540E10027B539 /* DownloadableImageViewer */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		CB31552D27B540E10027B539 /* DownloadableImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				CB31552E27B540E10027B539 /* Reducer */,
+				CB31553027B540E10027B539 /* State */,
+				CB31553227B540E10027B539 /* Action */,
+				CB31553427B540E10027B539 /* View */,
+				CB31553627B540E20027B539 /* Environment */,
+			);
+			path = DownloadableImageViewer;
+			sourceTree = "<group>";
+		};
+		CB31552E27B540E10027B539 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB31552F27B540E10027B539 /* DownloadableImageViewerReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB31553027B540E10027B539 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB31553127B540E10027B539 /* DownloadableImageViewerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB31553227B540E10027B539 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB31553327B540E10027B539 /* DownloadableImageViewerAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB31553427B540E10027B539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB31553527B540E10027B539 /* DownloadableImageViewerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB31553627B540E20027B539 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB31553727B540E20027B539 /* DownloadableImageViewerEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB31553D27B5430E0027B539 /* DownloadableData */ = {
+			isa = PBXGroup;
+			children = (
+				CB31554A27B57C740027B539 /* View */,
+				CB31554727B551270027B539 /* Environment */,
+				CB31554427B550CA0027B539 /* Reducer */,
+				CB31554127B5434E0027B539 /* Action */,
+				CB31553E27B5431D0027B539 /* State */,
+			);
+			path = DownloadableData;
+			sourceTree = "<group>";
+		};
+		CB31553E27B5431D0027B539 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB31553F27B5433F0027B539 /* DownloadableImageState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB31554127B5434E0027B539 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB31554227B54CB50027B539 /* DownloadableDataAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB31554427B550CA0027B539 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB31554527B550D90027B539 /* DownloadableDataReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB31554727B551270027B539 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB31554827B5513E0027B539 /* DownloadableDataEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB31554A27B57C740027B539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB31554B27B57C8F0027B539 /* DownloadableDataButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CB8A07F227AB01DD006828AC /* FlexibleBinding */ = {
@@ -1238,6 +1372,7 @@
 				CB8A086827AD893A006828AC /* AnimatedTimersReducer.swift in Sources */,
 				CB3154F127B2E11C0027B539 /* ListDeferedTransitionEnvironment.swift in Sources */,
 				CB1BDE1227AAC9A200D17723 /* AlertAndSheetEnvironment.swift in Sources */,
+				CB31553927B540E20027B539 /* DownloadableImageViewerState.swift in Sources */,
 				CB1BDE2427AAE10C00D17723 /* SimpleBindingAction.swift in Sources */,
 				CB8A085727AD6B8C006828AC /* TimerEnvironment.swift in Sources */,
 				CB31552927B44C460027B539 /* DownloadService.swift in Sources */,
@@ -1251,6 +1386,7 @@
 				CB8A083027AC663F006828AC /* ScramblerAction.swift in Sources */,
 				CB3154E127B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift in Sources */,
 				CB8A085C27AD6FA2006828AC /* ProgressRingView.swift in Sources */,
+				CB31554627B550D90027B539 /* DownloadableDataReducer.swift in Sources */,
 				CB8A085527AD6B8C006828AC /* TimerAction.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB8A082E27AC663F006828AC /* ScramblerReducer.swift in Sources */,
@@ -1268,11 +1404,13 @@
 				CB1BDE0027A86F7300D17723 /* NavigationModuleReducer.swift in Sources */,
 				CBA0C9FB27AE870200A861EF /* CircleButton.swift in Sources */,
 				CB8A080027AB01DD006828AC /* FlexibleBindingView.swift in Sources */,
+				CB31553B27B540E20027B539 /* DownloadableImageViewerView.swift in Sources */,
 				CB9CCDA427A81C27004FAA6A /* Int.swift in Sources */,
 				CB30866B27A7FE36007BD093 /* CounterReducer.swift in Sources */,
 				CB31551027B4172F0027B539 /* RecursiveTreeView.swift in Sources */,
 				CB3154ED27B2E11C0027B539 /* ListDeferedTransitionReducer.swift in Sources */,
 				CB31552127B41ADA0027B539 /* DownloadingEnvironment.swift in Sources */,
+				CB31554327B54CB50027B539 /* DownloadableDataAction.swift in Sources */,
 				CB8A084427AD6AD6006828AC /* TimerCounterState.swift in Sources */,
 				CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */,
 				CB8A081527AC420F006828AC /* JustEffectState.swift in Sources */,
@@ -1281,6 +1419,7 @@
 				CB31552527B421600027B539 /* String.swift in Sources */,
 				CB8A084527AD6AD6006828AC /* TimerCounterAction.swift in Sources */,
 				CB1BDE0627A86F8C00D17723 /* NavigationModuleAction.swift in Sources */,
+				CB31553C27B540E20027B539 /* DownloadableImageViewerEnvironment.swift in Sources */,
 				CB9CCDAE27A82077004FAA6A /* MegaCounterState.swift in Sources */,
 				CB31552A27B44C460027B539 /* DownloadServiceImplementation.swift in Sources */,
 				CB8A086B27AD893A006828AC /* AnimatedTimersView.swift in Sources */,
@@ -1299,6 +1438,7 @@
 				CB8A081F27AC461B006828AC /* NumberFactService.swift in Sources */,
 				CB8A081427AC420F006828AC /* JustEffectReducer.swift in Sources */,
 				CB8A084327AD6AD6006828AC /* TimerCounterReducer.swift in Sources */,
+				CB31554C27B57C8F0027B539 /* DownloadableDataButton.swift in Sources */,
 				CB8A086C27AD893A006828AC /* AnimatedTimersEnvironment.swift in Sources */,
 				CB30866627A7FBF1007BD093 /* CounterState.swift in Sources */,
 				CB8A082F27AC663F006828AC /* ScramblerState.swift in Sources */,
@@ -1311,6 +1451,7 @@
 				CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */,
 				CB1BDE2627AAE10C00D17723 /* SimpleBindingEnvironment.swift in Sources */,
 				CB30865727A7F947007BD093 /* CounterView.swift in Sources */,
+				CB31554927B5513E0027B539 /* DownloadableDataEnvironment.swift in Sources */,
 				CB8A084627AD6AD6006828AC /* TimerCounterView.swift in Sources */,
 				CB31550E27B4172F0027B539 /* RecursiveTreeState.swift in Sources */,
 				CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */,
@@ -1319,6 +1460,7 @@
 				CB8A081627AC420F006828AC /* JustEffectAction.swift in Sources */,
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
 				CB8A081727AC420F006828AC /* JustEffectView.swift in Sources */,
+				CB31554027B5433F0027B539 /* DownloadableImageState.swift in Sources */,
 				CB9CCD9227A80E09004FAA6A /* AnalyzableCounterState.swift in Sources */,
 				CB31551D27B41ADA0027B539 /* DownloadingReducer.swift in Sources */,
 				CBD0DEFB27B1762900389756 /* BetterAnimatedTimersEnvironment.swift in Sources */,
@@ -1327,10 +1469,12 @@
 				CB3154EE27B2E11C0027B539 /* ListDeferedTransitionState.swift in Sources */,
 				CB9CCDA027A81ABE004FAA6A /* FibonacciCounterEnvironment.swift in Sources */,
 				CB1BDE0E27AAC5BC00D17723 /* AlertAndSheetState.swift in Sources */,
+				CB31553A27B540E20027B539 /* DownloadableImageViewerAction.swift in Sources */,
 				CB8A080127AB01DD006828AC /* FlexibleBindingEnvironment.swift in Sources */,
 				CB1BDE0227A86F7B00D17723 /* NavigationModuleState.swift in Sources */,
 				CB8A083527AC6CDF006828AC /* ScrumbleGenerator.swift in Sources */,
 				CB9CCDAD27A82077004FAA6A /* MegaCounterReducer.swift in Sources */,
+				CB31553827B540E20027B539 /* DownloadableImageViewerReducer.swift in Sources */,
 				CB30865527A7F947007BD093 /* UniversityApp.swift in Sources */,
 				CB3154F027B2E11C0027B539 /* ListDeferedTransitionView.swift in Sources */,
 			);

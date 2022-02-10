@@ -10,7 +10,5 @@ import Foundation
 // MARK: - DownloadingAction
 
 public enum DownloadingAction: Equatable {
-    case loadingCompleted(id: UUID)
-    case counter(CounterAction)
-    case setNavigation(id: UUID?)
+    case downloadableImageItem(id: UUID, action: DownloadableImageViewerAction)
 }

@@ -11,8 +11,5 @@ import VERSE
 // MARK: - DownloadingEnvironment
 
 public struct DownloadingEnvironment {
-
-    public let scrumbleGenerator: ScrumbleGenerator = ScrumbleGeneratorImplementation()
-
     public let mainQueue: AnySchedulerOf<DispatchQueue> = DispatchQueue.main.eraseToAnyScheduler()
 }

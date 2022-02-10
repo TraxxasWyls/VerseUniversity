@@ -11,7 +11,7 @@ import SwiftUI
 
 typealias RecursiveTreeReducer = Reducer<RecursiveTreeState, RecursiveTreeAction, RecursiveTreeEnvironment>
 
-let recursiveTreeReducer = RecursiveTreeReducer.recursive{ reducer, state, action, environment in
+let recursiveTreeReducer = RecursiveTreeReducer.recursive { reducer, state, action, environment in
     switch action {
     case .append:
         state.children.append(.init(name: .randomString(length: Int(arc4random()) % 10)))

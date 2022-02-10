@@ -15,44 +15,35 @@ struct DownloadingView: View {
     var body: some View {
         WithViewStore(store) { viewStore in
             Form {
-                ForEach(viewStore.items) { item in
-                    NavigationLink(
-                        tag: item.id,
-                        selection: viewStore.binding(
-                            get: { $0.selection?.id },
-                            send: DownloadingAction.setNavigation
-                        )
-                    ) {
-                        IfLetStore(
-                            store.scope(
-                                state:  { $0.selection?.value },
-                                action: DownloadingAction.counter
-                            ),
-                            then: { store in
-                                CounterView(store: store)
-                            },
-                            else: ProgressView()
-                        )
-                    } label: {
-                        HStack {
-                            ZStack {
-                                Circle()
-                                    .fill(.gray)
-                                    .frame(width: 25, height: 25)
-                                Circle()
-                                    .fill(item.color)
-                                    .frame(width: 20, height: 20)
+                ForEachStore(store.scope(state: \.items, action: DownloadingAction.downloadableImageItem(id:action:))) { itemStore in
+                    WithViewStore(itemStore) { itemViewStore in
+                        NavigationLink(
+                            destination: DownloadableImageViewerView(store: itemStore)
+                        ) {
+                            HStack {
+                                if let data = itemViewStore.downloadableImageState.data,
+                                   let uiImage = UIImage(data: data),
+                                   let image = Image(uiImage: uiImage) {
+                                    image
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .cornerRadius(6)
+                                }
+                                Text(itemViewStore.downloadableImageState.title)
+                                Spacer()
+                                DownloadableDataButton(
+                                    store: itemStore.scope(
+                                        state: \.downloadableImageState,
+                                        action: DownloadableImageViewerAction.downloading
+                                    )
+                                ).buttonStyle(PlainButtonStyle())
                             }
-                            Text(item.title)
-                            Spacer()
-                            item.isLoading ? ProgressView() : nil
-                            Spacer()
-                            Text("\(item.count)")
                         }
                     }
                 }
             }
-        }.navigationBarTitle("List Instant Transition")
+            .navigationBarTitle("Downloads")
+        }
     }
 }
 
