@@ -65,6 +65,13 @@
 		CB31554627B550D90027B539 /* DownloadableDataReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554527B550D90027B539 /* DownloadableDataReducer.swift */; };
 		CB31554927B5513E0027B539 /* DownloadableDataEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554827B5513E0027B539 /* DownloadableDataEnvironment.swift */; };
 		CB31554C27B57C8F0027B539 /* DownloadableDataButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31554B27B57C8F0027B539 /* DownloadableDataButton.swift */; };
+		CB46D44327B7A55100FF4891 /* ScrollableImageExampleComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D43827B7A55100FF4891 /* ScrollableImageExampleComposer.swift */; };
+		CB46D44427B7A55100FF4891 /* ScrollableImageExampleReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D43A27B7A55100FF4891 /* ScrollableImageExampleReducer.swift */; };
+		CB46D44527B7A55100FF4891 /* ScrollableImageExampleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D43C27B7A55100FF4891 /* ScrollableImageExampleState.swift */; };
+		CB46D44627B7A55100FF4891 /* ScrollableImageExampleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D43E27B7A55100FF4891 /* ScrollableImageExampleAction.swift */; };
+		CB46D44727B7A55100FF4891 /* ScrollableImageExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D44027B7A55100FF4891 /* ScrollableImageExampleView.swift */; };
+		CB46D44827B7A55100FF4891 /* ScrollableImageExampleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D44227B7A55100FF4891 /* ScrollableImageExampleEnvironment.swift */; };
+		CB46D44B27B7A74700FF4891 /* CenteringViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D44A27B7A74700FF4891 /* CenteringViewer.swift */; };
 		CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */; };
 		CB8A07FE27AB01DD006828AC /* FlexibleBindingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */; };
 		CB8A07FF27AB01DD006828AC /* FlexibleBindingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */; };
@@ -185,6 +192,13 @@
 		CB31554527B550D90027B539 /* DownloadableDataReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataReducer.swift; sourceTree = "<group>"; };
 		CB31554827B5513E0027B539 /* DownloadableDataEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataEnvironment.swift; sourceTree = "<group>"; };
 		CB31554B27B57C8F0027B539 /* DownloadableDataButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDataButton.swift; sourceTree = "<group>"; };
+		CB46D43827B7A55100FF4891 /* ScrollableImageExampleComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableImageExampleComposer.swift; sourceTree = "<group>"; };
+		CB46D43A27B7A55100FF4891 /* ScrollableImageExampleReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableImageExampleReducer.swift; sourceTree = "<group>"; };
+		CB46D43C27B7A55100FF4891 /* ScrollableImageExampleState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableImageExampleState.swift; sourceTree = "<group>"; };
+		CB46D43E27B7A55100FF4891 /* ScrollableImageExampleAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableImageExampleAction.swift; sourceTree = "<group>"; };
+		CB46D44027B7A55100FF4891 /* ScrollableImageExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableImageExampleView.swift; sourceTree = "<group>"; };
+		CB46D44227B7A55100FF4891 /* ScrollableImageExampleEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableImageExampleEnvironment.swift; sourceTree = "<group>"; };
+		CB46D44A27B7A74700FF4891 /* CenteringViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteringViewer.swift; sourceTree = "<group>"; };
 		CB8A07F427AB01DD006828AC /* FlexibleBindingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingReducer.swift; sourceTree = "<group>"; };
 		CB8A07F627AB01DD006828AC /* FlexibleBindingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingState.swift; sourceTree = "<group>"; };
 		CB8A07F827AB01DD006828AC /* FlexibleBindingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingAction.swift; sourceTree = "<group>"; };
@@ -755,6 +769,75 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB46D43627B7A55100FF4891 /* ScrollableImageExample */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D43727B7A55100FF4891 /* Composer */,
+				CB46D43927B7A55100FF4891 /* Reducer */,
+				CB46D43B27B7A55100FF4891 /* State */,
+				CB46D43D27B7A55100FF4891 /* Action */,
+				CB46D43F27B7A55100FF4891 /* View */,
+				CB46D44127B7A55100FF4891 /* Environment */,
+			);
+			path = ScrollableImageExample;
+			sourceTree = "<group>";
+		};
+		CB46D43727B7A55100FF4891 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D43827B7A55100FF4891 /* ScrollableImageExampleComposer.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		CB46D43927B7A55100FF4891 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D43A27B7A55100FF4891 /* ScrollableImageExampleReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB46D43B27B7A55100FF4891 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D43C27B7A55100FF4891 /* ScrollableImageExampleState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB46D43D27B7A55100FF4891 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D43E27B7A55100FF4891 /* ScrollableImageExampleAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB46D43F27B7A55100FF4891 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D44027B7A55100FF4891 /* ScrollableImageExampleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB46D44127B7A55100FF4891 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D44227B7A55100FF4891 /* ScrollableImageExampleEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CB46D44927B7A69800FF4891 /* CenteringViewer */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D44A27B7A74700FF4891 /* CenteringViewer.swift */,
+			);
+			path = CenteringViewer;
+			sourceTree = "<group>";
+		};
 		CB8A07F227AB01DD006828AC /* FlexibleBinding */ = {
 			isa = PBXGroup;
 			children = (
@@ -1072,6 +1155,7 @@
 		CB8A085827AD6F62006828AC /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				CB46D43627B7A55100FF4891 /* ScrollableImageExample */,
 				CB31551227B41ADA0027B539 /* Downloading */,
 				CB31550227B4172F0027B539 /* RecursiveTree */,
 				CB3154E227B2E11C0027B539 /* ListDeferedTransition */,
@@ -1098,6 +1182,7 @@
 		CB8A085927AD6F77006828AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB46D44927B7A69800FF4891 /* CenteringViewer */,
 				CBA0C9FC27AE870700A861EF /* CircleButton */,
 				CB8A085A27AD6F84006828AC /* ProgressRingView */,
 			);
@@ -1384,13 +1469,16 @@
 				CB31552027B41ADA0027B539 /* DownloadingView.swift in Sources */,
 				CB9CCD9F27A81ABE004FAA6A /* FibonacciCounterReducer.swift in Sources */,
 				CB8A083027AC663F006828AC /* ScramblerAction.swift in Sources */,
+				CB46D44527B7A55100FF4891 /* ScrollableImageExampleState.swift in Sources */,
 				CB3154E127B2CFEB0027B539 /* ListInstantTransitionEnvironment.swift in Sources */,
+				CB46D44B27B7A74700FF4891 /* CenteringViewer.swift in Sources */,
 				CB8A085C27AD6FA2006828AC /* ProgressRingView.swift in Sources */,
 				CB31554627B550D90027B539 /* DownloadableDataReducer.swift in Sources */,
 				CB8A085527AD6B8C006828AC /* TimerAction.swift in Sources */,
 				CB9CCDA127A81ABE004FAA6A /* FibonacciCounterAction.swift in Sources */,
 				CB8A082E27AC663F006828AC /* ScramblerReducer.swift in Sources */,
 				CB8A07FD27AB01DD006828AC /* FlexibleBindingReducer.swift in Sources */,
+				CB46D44627B7A55100FF4891 /* ScrollableImageExampleAction.swift in Sources */,
 				CB31551F27B41ADA0027B539 /* DownloadingAction.swift in Sources */,
 				CB3154E027B2CFEB0027B539 /* ListInstantTransitionView.swift in Sources */,
 				CB8A083227AC663F006828AC /* ScramblerEnvironment.swift in Sources */,
@@ -1429,6 +1517,8 @@
 				CB31552327B41BD20027B539 /* Reducer.swift in Sources */,
 				CB8A087027AD8B6E006828AC /* Color.swift in Sources */,
 				CB8A086927AD893A006828AC /* AnimatedTimersState.swift in Sources */,
+				CB46D44427B7A55100FF4891 /* ScrollableImageExampleReducer.swift in Sources */,
+				CB46D44327B7A55100FF4891 /* ScrollableImageExampleComposer.swift in Sources */,
 				CB8A083127AC663F006828AC /* ScramblerView.swift in Sources */,
 				CB8A086A27AD893A006828AC /* AnimatedTimersAction.swift in Sources */,
 				CB9CCD9E27A81ABE004FAA6A /* FibonacciCounterView.swift in Sources */,
@@ -1456,6 +1546,7 @@
 				CB31550E27B4172F0027B539 /* RecursiveTreeState.swift in Sources */,
 				CB8A081827AC420F006828AC /* JustEffectEnvironment.swift in Sources */,
 				CB9CCDAC27A82077004FAA6A /* MegaCounterView.swift in Sources */,
+				CB46D44727B7A55100FF4891 /* ScrollableImageExampleView.swift in Sources */,
 				CBD0DEF927B1762900389756 /* BetterAnimatedTimersAction.swift in Sources */,
 				CB8A081627AC420F006828AC /* JustEffectAction.swift in Sources */,
 				CB30866D27A7FE74007BD093 /* CounterEnvironment.swift in Sources */,
@@ -1471,6 +1562,7 @@
 				CB1BDE0E27AAC5BC00D17723 /* AlertAndSheetState.swift in Sources */,
 				CB31553A27B540E20027B539 /* DownloadableImageViewerAction.swift in Sources */,
 				CB8A080127AB01DD006828AC /* FlexibleBindingEnvironment.swift in Sources */,
+				CB46D44827B7A55100FF4891 /* ScrollableImageExampleEnvironment.swift in Sources */,
 				CB1BDE0227A86F7B00D17723 /* NavigationModuleState.swift in Sources */,
 				CB8A083527AC6CDF006828AC /* ScrumbleGenerator.swift in Sources */,
 				CB9CCDAD27A82077004FAA6A /* MegaCounterReducer.swift in Sources */,

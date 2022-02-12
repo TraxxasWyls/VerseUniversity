@@ -25,4 +25,5 @@ public struct NavigationModuleState: Equatable {
     public var listDeferedTransition: ListDeferedTransitionState = ListDeferedTransitionState()
     public var recursiveTree: RecursiveTreeState = .random()
     public var downloading: DownloadingState = DownloadingState()
+    public var scrollableImageExample: ScrollableImageExampleState = ScrollableImageExampleState()
 }

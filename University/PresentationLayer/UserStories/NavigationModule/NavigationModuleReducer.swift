@@ -90,6 +90,11 @@ public let navigationModuleReducer = NavigationModuleReducer.combine(
         action: /NavigationModuleAction.downloading,
         environment: DownloadingEnvironment()
     ),
+    scrollableImageExampleReducer.pullback(
+        state: \.scrollableImageExample,
+        action: /NavigationModuleAction.scrollableImageExample,
+        environment: ScrollableImageExampleEnvironment()
+    ),
     .init { _, _, _ in
         return .none
     }

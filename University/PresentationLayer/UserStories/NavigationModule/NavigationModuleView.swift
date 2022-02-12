@@ -204,6 +204,19 @@ public struct NavigationModuleView: View {
                             Text("Downloading")
                         }
                     }
+                    Section(header: Text("Some kind of work?")) {
+                        NavigationLink(
+                            destination:
+                                ScrollableImageExampleView(
+                                    store: store.scope(
+                                        state: \.scrollableImageExample,
+                                        action: NavigationModuleAction.scrollableImageExample
+                                    )
+                                )
+                        ) {
+                            Text("ScrollableImageExample")
+                        }
+                    }
                 }
                 .navigationBarTitle(Text("VERSE"))
             }

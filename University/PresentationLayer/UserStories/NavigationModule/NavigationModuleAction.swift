@@ -25,4 +25,5 @@ public enum NavigationModuleAction: Equatable {
     case listDeferedTransition(ListDeferedTransitionAction)
     case recursiveTree(RecursiveTreeAction)
     case downloading(DownloadingAction)
+    case scrollableImageExample(ScrollableImageExampleAction)    
 }
