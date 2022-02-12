@@ -24,7 +24,7 @@ public struct DownloadableDataButton: View {
                     Image(systemName: "checkmark")
                         .resizable()
                         .frame(width: 20, height: 20)
-                } else if viewStore.isDownloadingInProgress {
+                } else if viewStore.isDownloadingInProgress, viewStore.downloadingProgres != 0 {
                     ZStack {
                         ProgressRingView(
                             progress: viewStore.downloadingProgres,
@@ -34,6 +34,14 @@ public struct DownloadableDataButton: View {
                         Rectangle()
                             .frame(width: 8, height: 8)
                             .foregroundColor(Color.blue)
+                    }
+                } else if viewStore.isDownloadingInProgress, viewStore.downloadingProgres == 0 {
+                    ZStack {
+                        ProgressView()
+                            .frame(width: 25, height: 25)
+                        Rectangle()
+                            .frame(width: 3, height: 3)
+                            .foregroundColor(Color.gray)
                     }
                 } else if !viewStore.isDownloaded {
                     Image(systemName: "icloud")

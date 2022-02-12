@@ -20,7 +20,7 @@ public struct DownloadingState: Equatable {
             downloadableImageState: .init(
                 title: "Samantha Sophia",
                 link: .init(
-                    string: "https://picsum.photos/id/1010/930/620"
+                    string: "https://picsum.photos/3240/2220"
                 ).unsafelyUnwrapped
             )
         ),
